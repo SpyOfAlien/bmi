@@ -1,0 +1,15 @@
+.item {
+  transition: background 0.2s ease-in-out;
+}
+
+.item.active::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  height: 40%;
+  width: 30px;
+  background-color: #f1b209;
+  z-index: -1;
+}

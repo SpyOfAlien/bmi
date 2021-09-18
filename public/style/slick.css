@@ -1,0 +1,5 @@
+.slick-slider.product .slick-slide {
+  padding: 0 10px;
+  z-index: 10;
+  cursor: pointer;
+}

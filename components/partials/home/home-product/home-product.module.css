@@ -1,0 +1,19 @@
+.p0 .overlay,
+.p1 .overlay,
+.p2 .overlay,
+.p3 .overlay,
+.p4 .overlay {
+  z-index: 0;
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.3s ease-in-out;
+}
+
+.p0:hover .overlay,
+.p1:hover .overlay,
+.p2:hover .overlay,
+.p3:hover .overlay,
+.p4:hover .overlay {
+  opacity: 1;
+  transform: translateX(0);
+}

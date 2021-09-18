@@ -1,0 +1,15 @@
+.heroOne .override,
+.heroTwo .override,
+.heroThree .override {
+  opacity: 0;
+  z-index: 10;
+  transform: translateY(100px);
+  transition: all 0.3s ease-in-out;
+}
+
+.heroOne:hover .override,
+.heroTwo:hover .override,
+.heroThree:hover .override {
+  opacity: 1;
+  transform: translateY(0);
+}
