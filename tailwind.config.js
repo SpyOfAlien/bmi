@@ -3,21 +3,31 @@ module.exports = {
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
-    colors: {
-      white: "#FFFFFF",
-      black: {
-        9: "#000000",
-        8: "#0A142F",
+    extend: {
+      spacing: {
+        "48%": "48%",
       },
-      yellow: "#F1B209",
-      green: {
-        9: "#21562A",
-        8: "#53D86A",
-        6: "#4BC25F",
-        5: "#56933D",
+      borderRadius: {
+        xs: ".25rem",
+      },
+      colors: {
+        white: "#FFFFFF",
+        black: {
+          9: "#000000",
+          8: "#0A142F",
+        },
+        yellow: "#F1B209",
+        green: {
+          9: "#21562A",
+          8: "#53D86A",
+          6: "#4BC25F",
+          5: "#56933D",
+        },
+
+        input: "#AFAFAF",
       },
     },
+
     fontSize: {
       xs: "0.875rem",
       h3: ["3rem", { lineHeight: "3.6rem" }],
@@ -25,9 +35,7 @@ module.exports = {
       h5: ["1.75rem", { lineHeight: "2rem" }],
       h6: ["1.25rem", { lineHeight: "1.3rem" }],
     },
-    borderRadius: {
-      xs: ".25rem",
-    },
+
     zIndex: {
       negative: -1,
     },

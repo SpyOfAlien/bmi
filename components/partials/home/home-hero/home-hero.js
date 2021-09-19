@@ -53,7 +53,8 @@ const HomeHero = () => {
 
           <div
             className={cn(
-              "absolute inset-0 bg-green-9 bg-opacity-60 flex items-end px-12 py-24"
+              "absolute inset-0 bg-green-9 bg-opacity-60 flex items-end px-12 py-24",
+              s.wrapper
             )}
           >
             <h3

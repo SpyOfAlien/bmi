@@ -2,6 +2,7 @@ import Container from "../../../layout/container";
 import Image from "next/image";
 import cn from "classnames";
 import useWindowSize from "../../../../utils/hooks/useWindowSize";
+import Slider from "react-slick";
 
 const HomeClients = () => {
   const { w, h } = useWindowSize();
@@ -15,9 +16,37 @@ const HomeClients = () => {
     "/assets/images/clients/tan-a.png",
   ];
 
+  const settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 5,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
+    swipeToSlide: true,
+    className: "product",
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
+  };
+
   return (
     <Container>
-      <div className="flex flex-wrap lg:flex-nowrap">
+      <Slider {...settings}>
         {clients.map((item, idx) => (
           <div
             key={idx}
@@ -33,7 +62,7 @@ const HomeClients = () => {
             <Image src={item} width={217} height={100} layout="responsive" />
           </div>
         ))}
-      </div>
+      </Slider>
     </Container>
   );
 };
