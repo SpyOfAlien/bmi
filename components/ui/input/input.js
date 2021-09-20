@@ -4,7 +4,7 @@ const Input = ({ placeHolder, required = false, onInputChange, cl = "" }) => {
   return (
     <input
       className={cn(
-        "focus:outline-none border border-input border-solid rounded-xs p-3 w-full",
+        "text-black-9 focus:outline-none border border-input border-solid rounded-xs p-3 w-full",
         cl
       )}
       placeholder={placeHolder}

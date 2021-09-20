@@ -1,0 +1,22 @@
+.root {
+  top: 60px;
+  height: calc(100% - 60px);
+  z-index: -10;
+}
+
+.root.open {
+  z-index: 999;
+}
+
+.modal {
+  opacity: 0;
+  transform: translateY(100vh);
+  transition: all 0.5s ease-in;
+  pointer-events: none;
+}
+
+.root.open .modal {
+  opacity: 1;
+  pointer-events: initial;
+  transform: translate(0);
+}

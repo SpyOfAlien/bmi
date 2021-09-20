@@ -16,7 +16,7 @@ export default function uiReducers(state = initialState, action) {
   switch (action.type) {
     case UI.OPEN_MODAL:
       return {
-        ...initialState,
+        ...state,
         modal: {
           ...state.menu,
           isOpen: true,
@@ -24,7 +24,7 @@ export default function uiReducers(state = initialState, action) {
       };
     case UI.CLOSE_MODAL:
       return {
-        ...initialState,
+        ...state,
         modal: {
           ...state.modal,
           isOpen: false,
@@ -32,7 +32,7 @@ export default function uiReducers(state = initialState, action) {
       };
     case UI.SET_MODAL_VIEW:
       return {
-        ...initialState,
+        ...state,
         modal: {
           ...state.modal,
           view: action.payload,
@@ -41,13 +41,13 @@ export default function uiReducers(state = initialState, action) {
 
     case UI.HOVER_NAV:
       return {
-        ...initialState,
+        ...state,
         navHovered: action.payload,
       };
 
     case UI.UPDATE_SIDEBAR_CONTROLLER:
       return {
-        ...initialState,
+        ...state,
         sidebarControler: action.payload,
       };
 

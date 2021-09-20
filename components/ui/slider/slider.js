@@ -20,16 +20,16 @@ const SlideItem = ({ slideData, onSlideChange }) => {
         </p>
         <div className="flex opacity-100">
           <span
-            className="bg-white h-full p-4 cursor-pointer"
+            className="bg-white transition-all duration-800 ease-in-out hover:bg-yellow h-full p-4 cursor-pointer"
             onClick={() => onSlideChange("next")}
           >
-            <Right width="20px" height="20px" />
+            <Left width="20px" height="20px" />
           </span>
           <span
-            className="bg-white h-full p-4 cursor-pointer"
+            className="bg-white  transition-all duration-800 ease-in-out hover:bg-yellow h-full p-4 cursor-pointer"
             onClick={() => onSlideChange("prev")}
           >
-            <Left width="20px" height="20px" />
+            <Right width="20px" height="20px" />
           </span>
         </div>
       </div>

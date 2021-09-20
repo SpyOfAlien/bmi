@@ -23,8 +23,14 @@ module.exports = {
           6: "#4BC25F",
           5: "#56933D",
         },
-
+        gray: "#E2E2E2",
         input: "#AFAFAF",
+      },
+      boxShadow: {
+        sidebarContent: "0px 2px 10px rgba(25, 1, 52, 0.12)",
+      },
+      zIndex: {
+        negative: -10,
       },
     },
 
@@ -36,9 +42,6 @@ module.exports = {
       h6: ["1.25rem", { lineHeight: "1.3rem" }],
     },
 
-    zIndex: {
-      negative: -1,
-    },
     screens: {
       sm: "640px",
       // => @media (min-width: 640px) { ... }

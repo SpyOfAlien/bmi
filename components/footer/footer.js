@@ -36,31 +36,41 @@ const Footer = () => {
                   <h6 className="font-semibold mb-8">Site map</h6>
                   <nav className="flex flex-col">
                     <Link href="/">
-                      <a className="opacity-70 mb-2">Trang chủ</a>
+                      <a className="opacity-70 mb-2 cursor-pointer">
+                        Trang chủ
+                      </a>
                     </Link>
                     <Link href="/about">
-                      <a className="opacity-70 mb-2">Abouts BMI</a>
+                      <a className="opacity-70 mb-2 cursor-pointer">
+                        Abouts BMI
+                      </a>
                     </Link>
                     <Link href="products">
-                      <a className="opacity-70 mb-2">Sản phẩm</a>
+                      <a className="opacity-70 mb-2 cursor-pointer">Sản phẩm</a>
                     </Link>
                     <Link href="news">
-                      <a className="opacity-70 mb-2">Tin tức</a>
+                      <a className="opacity-70 mb-2 cursor-pointer">Tin tức</a>
                     </Link>
                     <Link href="/contact">
-                      <a className="opacity-70 mb-2">Liên hệ</a>
+                      <a className="opacity-70 mb-2 cursor-pointer">Liên hệ</a>
                     </Link>
                     <Link href="support">
-                      <a className="opacity-70 mb-2">Hỗ trợ</a>
+                      <a className="opacity-70 mb-2 cursor-pointer">Hỗ trợ</a>
                     </Link>
                   </nav>
                 </div>
                 <div className="flex flex-col">
                   <h6 className="font-semibold mb-8">Socials</h6>
-                  <a className="opacity-70 mb-2" href="https://facebook.com">
+                  <a
+                    className="opacity-70 mb-2 cursor-pointer"
+                    href="https://facebook.com"
+                  >
                     Facebook
                   </a>
-                  <a className="opacity-70 mb-2" href="https://linkedin.com">
+                  <a
+                    className="opacity-70 mb-2 cursor-pointer"
+                    href="https://linkedin.com"
+                  >
                     Linkedin
                   </a>
                 </div>

@@ -1,6 +1,6 @@
-import AboutCommon from "../../components/partials/about/about-common/about-common";
+import AboutCommon from "../../../components/partials/about/about-common/about-common";
 
-const BMIHistoryPage = () => {
+const BMIInfrastructurePage = () => {
   return (
     <AboutCommon
       title={["About", <span className="text-yellow">BMI</span>]}
@@ -8,4 +8,4 @@ const BMIHistoryPage = () => {
     />
   );
 };
-export default BMIHistoryPage;
+export default BMIInfrastructurePage;

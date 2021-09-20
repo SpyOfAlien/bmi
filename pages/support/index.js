@@ -81,7 +81,7 @@ const SupportPage = () => {
 
             <div>
               <textarea
-                className="border border-solid border-input rounded-xs w-full p-4"
+                className="text-black-9 border border-solid border-input rounded-xs w-full p-4"
                 rows="6"
                 placeholder="Tin nhắn của bạn"
                 onChange={onMessageChange}

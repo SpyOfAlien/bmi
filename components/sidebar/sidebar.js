@@ -4,7 +4,7 @@ const SideBar = ({ sidebars = [] }) => {
   return (
     <div className="flex flex-col">
       {sidebars.map((item, idx) => (
-        <ul>
+        <ul key={item.name}>
           <SidebarItem sidebar={item} key={idx} />
           {item.childrens && <SideBar sidebars={item.childrens} />}
         </ul>

@@ -4,11 +4,16 @@ import cn from "classnames";
 import { useRef, useEffect } from "react";
 import useHover from "../../utils/hooks/useHover";
 import { useDispatch, useSelector } from "react-redux";
-import { hoverNav } from "../../store/actions/ui-action";
+import {
+  hoverNav,
+  closeModal,
+  updateSidebarController,
+} from "../../store/actions/ui-action";
 import isEqual from "lodash.isequal";
 import { useRouter } from "next/dist/client/router";
+import * as CONST from "../../utils/constants";
 
-const NavItem = ({ level, link, name }) => {
+const NavItem = ({ level, link, name, page }) => {
   const router = useRouter();
   const hoverRef = useRef(null);
   const isHover = useHover(hoverRef);
@@ -21,6 +26,11 @@ const NavItem = ({ level, link, name }) => {
     }
   }, [isHover]);
 
+  const updateSideBar = () => {
+    const sidebar = { page: page, level: level.slice(1) };
+    dispatch(updateSidebarController(sidebar));
+  };
+
   return (
     <div
       ref={hoverRef}
@@ -28,7 +38,7 @@ const NavItem = ({ level, link, name }) => {
         "p-4 text-white text-xs",
         s.item,
         uiState.navHovered &&
-          (uiState.navHovered === level ||
+          (isEqual(uiState.navHovered, level) ||
             isEqual(level, uiState.navHovered.slice(0, -1)) ||
             isEqual(level, uiState.navHovered.slice(0, -2)))
           ? "bg-yellow"
@@ -38,9 +48,11 @@ const NavItem = ({ level, link, name }) => {
         }
       )}
     >
-      <Link href={link}>
-        <a>{name}</a>
-      </Link>
+      <div onClick={updateSideBar}>
+        <Link href={link}>
+          <a>{name}</a>
+        </Link>
+      </div>
     </div>
   );
 };
