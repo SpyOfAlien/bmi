@@ -73,8 +73,8 @@ const Menu = () => {
       link: "/products",
       level: [2],
       childrens: [
-        { name: "Nhựa nguyên sinh", link: "/products", level: [2, 0] },
-        { name: "Compount", link: "/products", level: [2, 1] },
+        { name: "Nhựa nguyên sinh", link: "/products/primary", level: [2, 0] },
+        { name: "Compount", link: "/products/compound", level: [2, 1] },
       ],
     },
     {

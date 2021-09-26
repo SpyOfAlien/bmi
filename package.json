@@ -7,14 +7,18 @@
     "export": "next export"
   },
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^15.4.0",
     "aos": "^2.3.4",
     "classnames": "^2.3.1",
     "lodash.isequal": "^4.5.0",
+    "mapbox-gl": "^2.4.1",
     "next": "latest",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-map-gl": "^6.1.17",
     "react-redux": "^7.2.5",
     "react-slick": "^0.28.1",
+    "react-youtube": "^7.13.1",
     "redux": "^4.1.1",
     "redux-devtools-extension": "^2.13.9",
     "redux-persist": "^6.0.0",
@@ -23,6 +27,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.2.6",
+    "contentful-import": "^8.2.10",
     "postcss": "^8.3.5",
     "tailwindcss": "^2.2.4"
   }

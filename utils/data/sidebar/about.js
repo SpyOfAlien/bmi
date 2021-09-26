@@ -1,4 +1,4 @@
-const sidebars = [
+const aboutSidebars = [
   { name: "bmi", title: "Giới thiệu chúng tôi", level: [0], link: "/about" },
   {
     name: "history",
@@ -52,4 +52,4 @@ const sidebars = [
     ],
   },
 ];
-export default sidebars;
+export default aboutSidebars;

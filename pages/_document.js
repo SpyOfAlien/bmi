@@ -46,6 +46,11 @@ class MyDocument extends Document {
           <meta name="msapplication-TileColor" content="#da532c" />
           <meta name="theme-color" content="#ffffff" />
 
+          <link
+            href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css"
+            rel="stylesheet"
+          />
+
           <noscript>
             {/*
               Here we ignore the following recommendation to solve possible SSR problems with noscript browsers/visitors

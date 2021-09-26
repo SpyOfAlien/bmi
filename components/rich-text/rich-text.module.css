@@ -1,0 +1,34 @@
+.ul {
+  display: block;
+  list-style-type: disc;
+  padding-inline-start: 2rem;
+}
+
+.ol {
+  display: block;
+  list-style-type: decimal;
+  padding-inline-start: 2rem;
+}
+
+.ol b {
+  display: block;
+}
+
+.li {
+  line-height: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.videoEmbed {
+  position: relative;
+  padding-bottom: 56.25%;
+  margin-bottom: 2rem;
+}
+
+.videoEmbed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
