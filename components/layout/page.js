@@ -10,7 +10,7 @@ import { useRouter } from "next/dist/client/router";
 import { closeModal, hoverNav } from "../../store/actions/ui-action";
 import cn from "classnames";
 
-const Page = ({ children }) => {
+const Page = ({ children, cl = "" }) => {
   const uiState = useSelector((state) => state.uiReducers);
   const router = useRouter();
   const dispatch = useDispatch();
@@ -33,7 +33,7 @@ const Page = ({ children }) => {
   }, [router.pathname]);
 
   return (
-    <div className={cn(uiState.modal.isOpen && "relative")}>
+    <div className={cn(cl, uiState.modal.isOpen && "relative")}>
       <Modal isOpen={uiState.modal.isOpen}>
         {uiState.modal.view === CONST.MODAL_VIEW.MENU && <Menu />}
       </Modal>

@@ -70,7 +70,7 @@ const Menu = () => {
     {
       page: "products",
       name: "Sản phẩm",
-      link: "/products",
+      link: "/products/primary",
       level: [2],
       childrens: [
         { name: "Nhựa nguyên sinh", link: "/products/primary", level: [2, 0] },
@@ -81,28 +81,28 @@ const Menu = () => {
       page: "news",
 
       name: "Tin tức",
-      link: "/news",
+      link: "/news/internal",
       level: [3],
       childrens: [
         {
           page: "news-internal",
 
           name: "Tin tức nội bộ",
-          link: "/news",
+          link: "/news/internal",
           level: [3, 0],
         },
         {
           page: "news-genaral",
 
           name: "Tin tức chung",
-          link: "/news",
+          link: "/news/genaral",
           level: [3, 1],
         },
         {
           page: "news-hiring",
 
           name: "Tuyển dụng",
-          link: "/news",
+          link: "/news/genaral",
           level: [3, 2],
         },
       ],

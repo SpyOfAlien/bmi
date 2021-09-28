@@ -30,10 +30,10 @@ const ProductCommon = ({
 
         <Container cl="relative">
           <div className="flex py-12">
-            <div className="w-full md:w-4/12">
+            <div className="w-full md:w-3/12">
               <SideBar sidebars={productsSidebars} />
             </div>
-            <div className="w-full md:w-8/12 z-10 ml-4 p-4">
+            <div className="w-full md:w-9/12 z-10 ml-4 p-4">
               <Products
                 products={products}
                 title={titleProduct}

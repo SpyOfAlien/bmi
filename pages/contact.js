@@ -27,15 +27,6 @@ const ContactPage = () => {
 
   const { width, height } = useElementSize(mapRef);
 
-  useEffect(() => {
-    fetchProduct();
-  }, []);
-
-  const fetchProduct = async () => {
-    const a = await getProductsByType(false, "primary");
-    console.log("aaaa", a);
-  };
-
   return (
     <Page>
       <div className="relative">

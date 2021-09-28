@@ -3,19 +3,118 @@ import Image from "next/image";
 import Input from "../../components/ui/input/input";
 import useWindowSize from "../../utils/hooks/useWindowSize";
 import RadioButton from "../../components/ui/radio-button/radio-button";
+import { useState } from "react";
+import * as EmailValidator from "email-validator";
+import axios from "axios";
+import { data } from "autoprefixer";
 
 const SupportPage = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [product, setProduct] = useState("");
+  const [company, setCompany] = useState("");
+  const [companyLocation, setCompanyLocation] = useState("");
+  const [message, setMessage] = useState("");
+  const [agreement, setAgreement] = useState(false);
+  const [errors, setErrors] = useState({});
+
   const { w, h } = useWindowSize();
 
-  const onChangeAgreement = () => {};
+  const onMessageChange = (event) => {
+    setMessage(event.target.value);
+  };
 
-  const onNameChange = () => {};
-  const onEmailChange = () => {};
-  const onPhoneChange = () => {};
-  const onProductChange = () => {};
-  const onCompanyChange = () => {};
-  const onCompanyLocationChange = () => {};
-  const onMessageChange = () => {};
+  const onSubmit = async () => {
+    if (!name) {
+      setErrors({
+        ...errors,
+        name: "Vui lòng nhập tên",
+      });
+    } else {
+      setErrors({
+        ...errors,
+        name: "",
+      });
+    }
+    if (!email) {
+      setErrors({
+        ...errors,
+        email: "Vui lòng nhập email",
+      });
+    } else {
+      setErrors({
+        ...errors,
+        email: "",
+      });
+    }
+    if (!EmailValidator.validate(email)) {
+      setErrors({
+        ...errors,
+        email: "Địa chỉ email không đúng",
+      });
+    } else {
+      setErrors({
+        ...errors,
+        email: "",
+      });
+    }
+    if (!phone) {
+      setErrors({
+        ...errors,
+        phone: "Vui lòng nhập số điện thoại",
+      });
+    } else {
+      setErrors({
+        ...errors,
+        phone: "",
+      });
+    }
+    if (!message) {
+      setErrors({
+        ...errors,
+        message: "Vui lòng nhập nội dung",
+      });
+    } else {
+      setErrors({
+        ...errors,
+        message: "",
+      });
+    }
+    if (!agreement) {
+      setErrors({
+        ...errors,
+        agreement: "Vui lòng đồng ý",
+      });
+    } else {
+      setErrors({
+        ...errors,
+        agreement: "",
+      });
+    }
+
+    console.log("name", name);
+
+    if (!errors.name && !errors.phone && !errors.email && !errors.message) {
+      try {
+        const res = await axios.post("/api/contact", {
+          name: name,
+          email: email,
+          phone: phone,
+          message: message,
+          company: company,
+          companyLocation: companyLocation,
+          product: product,
+        });
+
+        if (res) {
+          console.log("res", res);
+        }
+      } catch (error) {
+        console.log("err", error);
+      }
+    }
+  };
 
   return (
     <Page>
@@ -44,37 +143,42 @@ const SupportPage = () => {
               <div className="w-full lg:w-48% mb-8 lg:mr-2">
                 <Input
                   placeHolder="Họ và tên đầy đủ"
-                  onInputChange={onNameChange}
+                  onInputChange={(name) => setName(name)}
                 />
+                {errors.name && <p className="text-red">{errors.name}</p>}
               </div>
               <div className="w-full lg:w-48% mb-8">
                 <Input
                   placeHolder="Email của bạn"
-                  onInputChange={onEmailChange}
+                  onInputChange={(email) => setEmail(email)}
                 />
+                {errors.email && <p className="text-red">{errors.email}</p>}
               </div>
               <div className="w-full lg:w-48% mb-8 lg:mr-2">
                 <Input
                   placeHolder="Số điện thoại"
-                  onInputChange={onPhoneChange}
+                  onInputChange={(phone) => setPhone(phone)}
                 />
+                {errors.phone && <p className="text-red">{errors.phone}</p>}
               </div>
               <div className="w-full lg:w-48% mb-8">
                 <Input
                   placeHolder="Sản phẩm muốn"
-                  onInputChange={onProductChange}
+                  onInputChange={(product) => setProduct(product)}
                 />
               </div>
               <div className="w-full lg:w-48% mb-8 lg:mr-2">
                 <Input
                   placeHolder="Tên công ty"
-                  onInputChange={onCompanyChange}
+                  onInputChange={(company) => setCompany(company)}
                 />
               </div>
               <div className="w-full lg:w-48% mb-8">
                 <Input
                   placeHolder="Địa chỉ công ty"
-                  onInputChange={onCompanyLocationChange}
+                  onInputChange={(companyLocation) =>
+                    setCompanyLocation(companyLocation)
+                  }
                 />
               </div>
             </div>
@@ -90,7 +194,7 @@ const SupportPage = () => {
           </div>
 
           <div className="mb-4">
-            <RadioButton onCheck={onChangeAgreement}>
+            <RadioButton onCheck={(check) => setAgreement(check)}>
               Có, tôi đồng ý nhận email từ BMI và các chi nhánh của BMI. Tôi có
               thể chọn không tham gia bất cứ lúc nào.
             </RadioButton>
@@ -102,7 +206,10 @@ const SupportPage = () => {
           </div>
 
           <div className=" flex justify-end w-full">
-            <button className="text-white font-semibold bg-green-9 px-8 py-3 rounded-xs">
+            <button
+              onClick={onSubmit}
+              className="text-white font-semibold bg-green-9 px-8 py-3 rounded-xs"
+            >
               Xác nhận & Gửi
             </button>
           </div>

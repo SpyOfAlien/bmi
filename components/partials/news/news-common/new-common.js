@@ -3,15 +3,11 @@ import SideBar from "../../../sidebar/sidebar";
 import CommingSoon from "../../../comming-soon/comming-soon";
 import Hero from "../../../ui/hero/hero";
 import { useSelector } from "react-redux";
-import aboutSidebars from "../../../../utils/data/sidebar/about";
-import isEqual from "lodash.isequal";
-import AboutBmi from "../about-bmi/about-bmi";
-import Container from "../../../layout/container";
+import newsSidebars from "../../../../utils/data/sidebar/news";
 import Image from "next/image";
-import AboutHistory from "../about-history/about-history";
-import AboutVision from "../about-vision/about-vision";
+import Container from "../../../layout/container";
 
-const AboutCommon = ({ title, desc }) => {
+const NewsCommon = ({ title, desc }) => {
   const uiState = useSelector((state) => state.uiReducers);
 
   return (
@@ -37,14 +33,10 @@ const AboutCommon = ({ title, desc }) => {
         <Container>
           <div className="flex py-12">
             <div className="w-full md:w-4/12">
-              <SideBar sidebars={aboutSidebars} />
+              <SideBar sidebars={newsSidebars} />
             </div>
             <div className="w-full md:w-8/12 z-10 bg-white ml-4 p-4 rounded-xs shadow-sidebarContent">
-              {isEqual(uiState.sidebarControler.level, [0]) && <AboutBmi />}
-              {isEqual(uiState.sidebarControler.level, [1]) && <AboutHistory />}
-              {isEqual(uiState.sidebarControler.level, [2]) && <AboutVision />}
-              {isEqual(uiState.sidebarControler.level, [3]) && <CommingSoon />}
-              {isEqual(uiState.sidebarControler.level, [4]) && <CommingSoon />}
+              <CommingSoon />
             </div>
           </div>
         </Container>
@@ -53,4 +45,4 @@ const AboutCommon = ({ title, desc }) => {
   );
 };
 
-export default AboutCommon;
+export default NewsCommon;

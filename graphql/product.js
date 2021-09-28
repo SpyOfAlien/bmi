@@ -103,7 +103,7 @@ export async function getAllProductForHome(preview) {
     `query {
       productCollection(order: date_DESC, preview: ${
         preview ? "true" : "false"
-      }, limit: 10) {
+      }, limit: 5) {
         items {
           ${PRODUCTS_GRAPHQL_FIELDS}
         }

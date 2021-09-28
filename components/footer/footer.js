@@ -45,10 +45,10 @@ const Footer = () => {
                         Abouts BMI
                       </a>
                     </Link>
-                    <Link href="products">
+                    <Link href="/products/primary">
                       <a className="opacity-70 mb-2 cursor-pointer">Sản phẩm</a>
                     </Link>
-                    <Link href="news">
+                    <Link href="/news/internal">
                       <a className="opacity-70 mb-2 cursor-pointer">Tin tức</a>
                     </Link>
                     <Link href="/contact">

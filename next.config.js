@@ -6,6 +6,7 @@ module.exports = {
     CONTENTFUL_PREVIEW_ACCESS_TOKEN:
       process.env.CONTENTFUL_PREVIEW_ACCESS_TOKEN,
     CONTENTFUL_PREVIEW_SECRET: process.env.CONTENTFUL_PREVIEW_SECRET,
+    SENDER_EMAIL_PASS: process.env.SENDER_EMAIL_PASS,
   },
   images: {
     domains: ["images.ctfassets.net"],

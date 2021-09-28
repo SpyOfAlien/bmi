@@ -10,12 +10,8 @@ const Products = ({ products, title, desc, url }) => {
     height: "180",
     width: "260",
     playerVars: {
-      autoplay: 1,
+      autoplay: 0,
     },
-  };
-
-  const onReady = (event) => {
-    event.target.pauseVideo();
   };
 
   return (
@@ -24,7 +20,7 @@ const Products = ({ products, title, desc, url }) => {
         <h4 className="text-h4 font-semibold mb-8">{title}</h4>
         <div className="flex mb-8">
           <div className="mr-4">
-            <YouTube videoId={url} opts={opts} onReady={onReady} />
+            <YouTube videoId={url} opts={opts} />
           </div>
           <p>{desc}</p>
         </div>
