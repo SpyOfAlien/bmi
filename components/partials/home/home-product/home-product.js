@@ -99,7 +99,7 @@ const HomeProduct = () => {
     <div>
       <Container cl="flex flex-col items-end mb-6">
         <p className="mb-2">Our Products</p>
-        <h6 className="text-h3 font-semibold">Sản phẩm</h6>
+        <h6 className="text-h3 font-semibold">Sản Phẩm & Giải Pháp</h6>
       </Container>
       <div>
         <Slider {...settings}>

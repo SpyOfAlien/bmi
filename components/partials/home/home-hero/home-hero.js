@@ -8,17 +8,17 @@ const HomeHero = () => {
     {
       img: "/assets/images/hero/home/factory.png",
       override: {
-        title: "Về chúng tôi",
+        title: "Giới thiệu chung",
         content:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+          "Chúng tôi là nhà sản xuất và thương mại hạt nhựa compound uy tín và chất lượng hàng đầu tại Việt Nam. ",
       },
     },
     {
       img: "/assets/images/hero/home/product.png",
       override: {
-        title: "Sảm phẩm",
+        title: "Sản phẩm",
         content:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+          "BMI chuyên cung cấp các giải pháp về các dòng hạt nhựa compound và thương mại các dòng nhựa nguyên sinh.",
       },
     },
     {

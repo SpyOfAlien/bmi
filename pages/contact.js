@@ -59,8 +59,20 @@ const ContactPage = () => {
             </p>
           </div>
         </div>
-        <div className="relative mb-24 lg:mb-0 lg:bottom-24 w-4/5 mx-auto bg-white pt-16">
-          <div className="flex flex-col lg:flex-row justify-center w-4/5 mx-auto shadow-lg p-4 relative top-32 lg:top-16 z-10 bg-white">
+        <div className="relative mb-24 lg:mb-0 lg:bottom-24 w-11/12 mx-auto bg-white pt-16">
+          <div className="flex flex-col lg:flex-row justify-between w-4/5 mx-auto shadow-lg p-4 relative top-32 lg:top-16 z-10 bg-white">
+            <div className="w-full lg:w-1/3 flex mb-6 lg:mb-0">
+              <span className="mr-2">
+                <LocationGreen />
+              </span>
+              <div>
+                <h6 className="text-h6 font-semibold mb-2">Factory</h6>
+                <p>
+                  Lô CN7, KCN Phúc Sơn, Phường Ninh Phúc, Tp.Ninh Bình, Tỉnh
+                  Ninh Bình.
+                </p>
+              </div>
+            </div>
             <div className="w-full lg:w-1/3 flex mb-6 lg:mb-0">
               <span className="mr-2">
                 <LocationGreen />
@@ -68,27 +80,30 @@ const ContactPage = () => {
               <div>
                 <h6 className="text-h6 font-semibold mb-2">Office</h6>
                 <p>
-                  Lot CN07, Phuc Son Industrial Zone, Ninh Phuc Ward, Ninh Binh
-                  City, Ninh Binh Province, Viet Nam
+                  Số 10 Đường 2.3, KĐT Gamuda, Phường Trần Phú, Quận Hoàng Mai,
+                  Thành phố Hà Nội.
                 </p>
               </div>
             </div>
-            <div className="w-full lg:w-1/3 flex mb-6 lg:mb-0">
-              <span className="mr-2">
-                <EmailGreen />
-              </span>
-              <div>
-                <h6 className="text-h6 font-semibold mb-2">Email</h6>
-                <p>dohuongb@bmipolymer.com.vn</p>
+
+            <div>
+              <div className="w-full lg:w-1/3 flex mb-2">
+                <span className="mr-2">
+                  <PhoneGreen />
+                </span>
+                <div>
+                  <h6 className="text-h6 font-semibold mb-2">Contact</h6>
+                  <p>+84.984.097.525</p>
+                </div>
               </div>
-            </div>
-            <div className="w-full lg:w-1/3 flex">
-              <span className="mr-2">
-                <PhoneGreen />
-              </span>
-              <div>
-                <h6 className="text-h6 font-semibold mb-2">Support</h6>
-                <p>hotline: +84.984.097.525</p>
+              <div className="w-full lg:w-1/3 flex mb-6 lg:mb-0">
+                <span className="mr-2">
+                  <EmailGreen />
+                </span>
+                <div>
+                  <h6 className="text-h6 font-semibold mb-2">Email</h6>
+                  <p>info@bmipolymer.com.vn</p>
+                </div>
               </div>
             </div>
           </div>

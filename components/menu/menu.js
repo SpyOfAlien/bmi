@@ -124,7 +124,7 @@ const Menu = () => {
           page: "support-infor",
 
           name: "Liên hệ thông tin",
-          link: "/support",
+          link: "/support/resources",
           level: [5, 1],
         },
       ],
@@ -139,12 +139,12 @@ const Menu = () => {
         <NavList navs={navs} />
       </div>
       <div className="text-xs text-white">
-        <div className="flex items-center mb-8 cursor-pointer w-max">
+        {/* <div className="flex items-center mb-8 cursor-pointer w-max">
           <span className="mr-2">
             <Document />
           </span>
           <p className="font-semibold">Download tài liệu</p>
-        </div>
+        </div> */}
 
         <div style={{ height: "1px" }} className="w-full bg-white mb-8"></div>
 

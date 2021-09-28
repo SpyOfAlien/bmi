@@ -6,8 +6,8 @@ const Map = ({ width }) => {
     viewport: {
       width: width,
       height: "500px",
-      latitude: 20.245307,
-      longitude: 105.95349,
+      latitude: 20.237458385981174,
+      longitude: 106.00461963298275,
       zoom: 13,
     },
   };

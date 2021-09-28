@@ -28,7 +28,7 @@ const HomeHistory = () => {
           <h6 className="uppercase font-normal mb-2">Về chúng tôi</h6>
           <div className="mb-6">
             <h3 className="text-h3 font-semibold tracking-wide mb-4">
-              Hành trình lịch sử
+              Quá Trình Phát Triển
             </h3>
             <p>
               Description of title with 3 row: consectetuer adipiscing elit, sed
