@@ -33,37 +33,31 @@ const HomeAbout = () => {
 
   const aboutSliderContent = [
     {
-      title: "Title of content 3 with 2 rows",
-      desc:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat adipiscing urna quam vitae arcu at facilisis adipiscing. Lacus morbi nulla enim imperdiet mi vel fames cras fringilla. Quam quam in sit augue.",
+      title: "Đang cập nhật ...",
+      desc: "Đang cập nhật ...",
     },
     {
-      title: "Title of content 2 with 1 rows",
-      desc:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat adipiscing urna quam vitae arcu at facilisis adipiscing. Lacus morbi nulla enim imperdiet mi vel fames cras fringilla.",
+      title: "Đang cập nhật ...",
+      desc: "Đang cập nhật ...",
     },
     {
-      title: "Title of content 2 with 4 rows",
-      desc:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat adipiscing urna quam vitae arcu at facilisis adipiscing. Lacus morbi nulla enim imperdiet mi vel fames cras fringilla.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat adipiscing urna quam vitae arcu at facilisis adipiscing. Lacus morbi nulla enim imperdiet mi vel fames cras fringilla.",
+      title: "Đang cập nhật ...",
+      desc: "Đang cập nhật ...",
     },
   ];
 
   const advantages = [
     {
       title: "Chất lượng",
-      desc:
-        "Assertively iterate resource maximizing products after leading intellectual capital.",
+      desc: "Đang cập nhật ...",
     },
     {
       title: "Dịch vụ uy tín",
-      desc:
-        "Assertively iterate resource maximizing products after leading intellectual capital.",
+      desc: "Đang cập nhật ...",
     },
     {
       title: "Chăm sóc tận tình",
-      desc:
-        "Assertively iterate resource maximizing products after leading intellectual capital.",
+      desc: "Đang cập nhật ...",
     },
   ];
 

@@ -10,10 +10,10 @@ const HomeHistory = () => {
   const router = useRouter();
 
   const accomplishments = [
-    { number: "16+", desc: "Wrting 2 rows with your Goal description " },
-    { number: "20+", desc: "Wrting 2 rows with your Goal description " },
-    { number: "24+", desc: "Wrting 2 rows with your Goal description " },
-    { number: "50+", desc: "Wrting 2 rows with your Goal description " },
+    { number: "16+", desc: "Đang cập nhật ..." },
+    { number: "20+", desc: "Đang cập nhật ..." },
+    { number: "24+", desc: "Đang cập nhật ..." },
+    { number: "50+", desc: "Đang cập nhật ..." },
   ];
 
   return (
@@ -30,11 +30,7 @@ const HomeHistory = () => {
             <h3 className="text-h3 font-semibold tracking-wide mb-4">
               Quá Trình Phát Triển
             </h3>
-            <p>
-              Description of title with 3 row: consectetuer adipiscing elit, sed
-              diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-              aliquam erat volutpat. Ut wisi enim ad
-            </p>
+            <p>Đang cập nhật ...</p>
           </div>
 
           <Button cl="w-44" onClickBtn={() => router.push("/about/history")}>

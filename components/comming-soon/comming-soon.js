@@ -12,14 +12,14 @@ const CommingSoon = () => {
       </div>
       <div className="absolute inset-0 flex flex-col justify-center items-center">
         <h3 className="text-white text-h3 text-center font-bold mb-4">
-          This Page will comming soon!
+          Đang cập nhật!
         </h3>
 
         <Button
           onClickBtn={() => router.push("/")}
           cl="border-white text-white"
         >
-          Go to home
+          Trở về trang chủ
         </Button>
       </div>
     </div>

@@ -61,9 +61,9 @@ const ProductDetailPage = ({ product, relatedProduct }) => {
                   layout="responsive"
                 />
               </div>
-              <button className="bg-green-5 text-white px-4 py-2 w-full">
+              {/* <button className="bg-green-5 text-white px-4 py-2 w-full">
                 Liên hệ tư vấn
-              </button>
+              </button> */}
             </div>
           </div>
         </Container>

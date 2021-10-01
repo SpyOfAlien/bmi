@@ -117,14 +117,14 @@ const Menu = () => {
         {
           page: "support-resource",
           name: "Resource Center",
-          link: "/support",
+          link: "/support/resources",
           level: [5, 0],
         },
         {
           page: "support-infor",
 
           name: "Liên hệ thông tin",
-          link: "/support/resources",
+          link: "/support",
           level: [5, 1],
         },
       ],
@@ -156,8 +156,8 @@ const Menu = () => {
             <div>
               <h6 className="mt-3 font-semibold mb-2">Địa chỉ</h6>
               <p>
-                Lot CN07, Phuc Son Industrial Zone, Ninh Phuc Ward, Ninh Binh
-                City, Ninh Binh Province, Viet Nam
+                Lô CN7, KCN Phúc Sơn, Phường Ninh Phúc, Tp.Ninh Bình, Tỉnh Ninh
+                Bình.
               </p>
             </div>
           </div>
@@ -168,7 +168,7 @@ const Menu = () => {
             </span>
             <div>
               <h6 className="mt-3 font-semibold mb-2">Email</h6>
-              <p>Sale: dohuongb@bmipolymer.com.vn</p>
+              <p>Sale: info@bmipolymer.com.vn</p>
             </div>
           </div>
           <div className="flex w-full mb-4 lg:w-1/3 pr-12">

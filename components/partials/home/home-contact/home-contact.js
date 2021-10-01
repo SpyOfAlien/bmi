@@ -43,7 +43,7 @@ const HomeContact = () => {
           bạn cần được cung cấp”
         </h5>
         <p className="text-center text-white mb-8">
-          <span className="mr-4">Rachel Azark</span>
+          <span className="mr-4">Đang cập nhật ...</span>
           <span>CEO</span>
         </p>
 

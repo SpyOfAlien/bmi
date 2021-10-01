@@ -17,7 +17,7 @@ const ProductsPage = ({ allProducts }) => {
   return (
     <ProductCommon
       title={["Sản phẩm ", <span className="text-yellow">BMI</span>]}
-      desc="Description of title with 3 row:  consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad"
+      desc="Đang cập nhật ..."
       products={allProducts}
       titleProduct={title}
       descProduct={desc}

@@ -14,8 +14,7 @@ const HomeProduct = () => {
       imgH: 487,
       override: {
         title: "Tittle of subject product 1",
-        desc:
-          "Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway.",
+        desc: "Đang cập nhật ...",
       },
     },
     {
@@ -24,8 +23,7 @@ const HomeProduct = () => {
       imgH: 487,
       override: {
         title: "Tittle of subject product 2",
-        desc:
-          "Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway.",
+        desc: "Đang cập nhật ...",
       },
     },
     {
@@ -34,8 +32,7 @@ const HomeProduct = () => {
       imgH: 487,
       override: {
         title: "Tittle of subject product 3",
-        desc:
-          "Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway.",
+        desc: "Đang cập nhật ...",
       },
     },
     {
@@ -44,8 +41,7 @@ const HomeProduct = () => {
       imgH: 487,
       override: {
         title: "Tittle of subject product 4",
-        desc:
-          "Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway.",
+        desc: "Đang cập nhật ...",
       },
     },
     {
@@ -54,8 +50,7 @@ const HomeProduct = () => {
       imgH: 487,
       override: {
         title: "Tittle of subject product 5",
-        desc:
-          "Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway.",
+        desc: "Đang cập nhật ...",
       },
     },
   ];
