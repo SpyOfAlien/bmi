@@ -14,6 +14,7 @@ const ProductCommon = ({
   products,
   titleProduct,
   descProduct,
+  productBox = [],
 }) => {
   const uiState = useSelector((state) => state.uiReducers);
 
@@ -38,6 +39,7 @@ const ProductCommon = ({
                 products={products}
                 title={titleProduct}
                 desc={descProduct}
+                productBox={productBox}
                 url="2g811Eo7K8U"
               />
             </div>

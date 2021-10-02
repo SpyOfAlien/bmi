@@ -6,15 +6,28 @@ import CommingSoon from "../../components/comming-soon/comming-soon";
 import Container from "../../components/layout/container";
 
 export async function getStaticProps() {
-  const pdfDirectory = path.join(process.cwd(), "public/pdf");
-  const filenames = await fs.readdir(pdfDirectory);
+  const pdfProfileDirectory = path.join(process.cwd(), "public/pdf/profiles");
+  const profilesFilenames = await fs.readdir(pdfProfileDirectory);
 
-  return { props: { filenames, dir: pdfDirectory } };
+  const pdfProductsDirectory = path.join(process.cwd(), "public/pdf/products");
+  const productsFilenames = await fs.readdir(pdfProductsDirectory);
+
+  return {
+    props: {
+      profiles: profilesFilenames,
+      products: productsFilenames,
+      dir: pdfProductsDirectory,
+    },
+  };
 }
 
-const ResourcesPage = ({ filenames, dir }) => {
-  const downloadFile = (file) => {
-    window.open(`/pdf/${file}`);
+const ResourcesPage = ({ profiles, products, dir }) => {
+  const downloadFile = (file, type) => {
+    if (type === "profile") {
+      window.open(`/pdf/profiles/${file}`);
+    } else {
+      window.open(`/pdf/products/${file}`);
+    }
   };
 
   return (
@@ -22,10 +35,10 @@ const ResourcesPage = ({ filenames, dir }) => {
       <Container>
         <div className="my-32">
           <h3 className="text-h3 font-semibold mb-12 text-center">
-            Tài liệu về BMI
+            BMI Profiles
           </h3>
           <div>
-            {filenames.map((file, idx) => (
+            {profiles.map((file, idx) => (
               <div
                 className="flex justify-between mb-6 bg-white shadow hover:shadow-md rounded-xs py-6 px-4"
                 key={idx}
@@ -34,10 +47,33 @@ const ResourcesPage = ({ filenames, dir }) => {
               >
                 <div>{file}</div>
                 <div
-                  onClick={(event) => downloadFile(file)}
+                  onClick={(event) => downloadFile(file, "profile")}
                   className="cursor-pointer border border-solid px-2 py-1"
                 >
                   Xem tài liệu
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="my-32">
+          <h3 className="text-h3 font-semibold mb-12 text-center">
+            Sản phẩm BMI
+          </h3>
+          <div className="flex flex-wrap">
+            {products.map((file, idx) => (
+              <div
+                className="flex flex-col mr-4 mb-2 w-48% md:w-1/3 xl:w-18% justify-between mb-6 bg-white shadow hover:shadow-md rounded-xs py-6 px-4"
+                key={idx}
+                data-aos="fade-up"
+                data-aos-delay={idx * 50 + 300}
+              >
+                <div className="mb-4 text-center font-semibold">{file}</div>
+                <div
+                  onClick={(event) => downloadFile(file, "products")}
+                  className="text-center w-4/5 mx-auto cursor-pointer border border-solid px-2 py-1"
+                >
+                  Xem chi tiết
                 </div>
               </div>
             ))}

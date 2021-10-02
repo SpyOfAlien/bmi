@@ -4,8 +4,7 @@ import Right from "../../../icons/right";
 import cn from "classnames";
 import Link from "next/link";
 
-const Products = ({ products, title, desc, url }) => {
-  console.log("product", products);
+const Products = ({ products, title, desc, url, productBox = [] }) => {
   const opts = {
     height: "180",
     width: "260",
@@ -13,6 +12,8 @@ const Products = ({ products, title, desc, url }) => {
       autoplay: 0,
     },
   };
+
+  console.log("mmm", productBox.length);
 
   return (
     <div>
@@ -25,6 +26,28 @@ const Products = ({ products, title, desc, url }) => {
           <p>{desc}</p>
         </div>
       </div>
+
+      {productBox.length > 0 && (
+        <div className="mb-16 flex flex-wrap">
+          {productBox.map((item, idx) => (
+            <div
+              key={idx}
+              className="w-1/2 md:w3/5 lg:w-4/5 xl:w-18% shadow-md mb-2 mr-2 p-2"
+            >
+              <div className="w-full mb-2">
+                <Image
+                  src={item.imgUrl}
+                  width={500}
+                  height={500}
+                  layout="responsive"
+                />
+              </div>
+
+              <h6 className="text-center font-semibold">{item.name}</h6>
+            </div>
+          ))}
+        </div>
+      )}
 
       <div className="flex flex-col md:flex-row md:justify-between mb-8 py-4 px-8 lg:px-12 rounded-xs shadow-sidebarContent bg-white">
         <p>
