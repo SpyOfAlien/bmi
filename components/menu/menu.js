@@ -62,7 +62,11 @@ const Menu = () => {
               link: "/about/capacity",
               level: [1, 4, 2],
             },
-            { name: "Đối tác", link: "/about/capacity", level: [1, 4, 3] },
+            {
+              name: "Đối tác",
+              link: "/about/capacity/partner",
+              level: [1, 4, 3],
+            },
           ],
         },
       ],

@@ -2,8 +2,15 @@ import Image from "next/image";
 import Right from "../../../icons/right";
 import s from "./home-hero.module.css";
 import cn from "classnames";
+import { useRouter } from "next/dist/client/router";
+import { useSelector, useDispatch } from "react-redux";
+import { updateSidebarController } from "../../../../store/actions/ui-action";
 
 const HomeHero = () => {
+  const uiState = useSelector((state) => state.uiReducers);
+  const dispatch = useDispatch();
+
+  const router = useRouter();
   const sections = [
     {
       img: "/assets/images/hero/home/factory.png",
@@ -12,6 +19,8 @@ const HomeHero = () => {
         content:
           "Chúng tôi là nhà sản xuất và thương mại hạt nhựa compound uy tín và chất lượng hàng đầu tại Việt Nam. ",
       },
+      link: "/about",
+      level: [0],
     },
     {
       img: "/assets/images/hero/home/product.png",
@@ -20,6 +29,8 @@ const HomeHero = () => {
         content:
           "BMI chuyên cung cấp các giải pháp về các dòng hạt nhựa compound và thương mại các dòng nhựa nguyên sinh.",
       },
+      link: "/products/primary",
+      level: [0],
     },
     {
       img: "/assets/images/hero/home/office.png",
@@ -27,8 +38,20 @@ const HomeHero = () => {
         title: "Liên hệ",
         content: "Đang cập nhật...",
       },
+      link: "/contact",
+      level: [],
     },
   ];
+
+  const onRedirect = (link, level) => {
+    console.log("link", link);
+    console.log("level", level);
+
+    if (level.length > 0) {
+      dispatch(updateSidebarController({ level }));
+    }
+    router.push(link);
+  };
 
   return (
     <div className="flex flex-col lg:flex-row">
@@ -52,9 +75,10 @@ const HomeHero = () => {
 
           <div
             className={cn(
-              "absolute inset-0 bg-green-9 bg-opacity-60 flex items-end px-12 py-24",
+              "absolute inset-0 bg-green-9 bg-opacity-60 flex items-end px-12 py-24 cursor-pointer",
               s.wrapper
             )}
+            onClick={() => onRedirect(item.link, item.level)}
           >
             <h3
               data-aos="fade-up"

@@ -2,11 +2,13 @@ module.exports = {
   mode: "jit",
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: false, // or 'media' or 'class'
+  important: true,
   theme: {
     extend: {
       spacing: {
         "48%": "48%",
         "18%": "18%",
+        "32%": "32%",
       },
       borderRadius: {
         xs: ".25rem",

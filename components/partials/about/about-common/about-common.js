@@ -10,6 +10,7 @@ import Container from "../../../layout/container";
 import Image from "next/image";
 import AboutHistory from "../about-history/about-history";
 import AboutVision from "../about-vision/about-vision";
+import AboutPartner from "../about-partner/about-partner";
 
 const AboutCommon = ({ title, desc }) => {
   const uiState = useSelector((state) => state.uiReducers);
@@ -45,6 +46,9 @@ const AboutCommon = ({ title, desc }) => {
               {isEqual(uiState.sidebarControler.level, [2]) && <AboutVision />}
               {isEqual(uiState.sidebarControler.level, [3]) && <CommingSoon />}
               {isEqual(uiState.sidebarControler.level, [4]) && <CommingSoon />}
+              {isEqual(uiState.sidebarControler.level, [4, 3]) && (
+                <AboutPartner />
+              )}
             </div>
           </div>
         </Container>
