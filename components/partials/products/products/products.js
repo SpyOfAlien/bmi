@@ -43,7 +43,7 @@ const Products = ({ products, title, desc, url, productBox = [] }) => {
                 />
               </div>
 
-              <h6 className="text-center font-semibold">{item.name}</h6>
+              {/* <h6 className="text-center font-semibold">{item.name}</h6> */}
             </div>
           ))}
         </div>
