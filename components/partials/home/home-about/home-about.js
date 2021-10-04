@@ -48,15 +48,15 @@ const HomeAbout = () => {
 
   const advantages = [
     {
-      title: "Chất lượng",
+      title: "Best quality",
       desc: "Đang cập nhật ...",
     },
     {
-      title: "Dịch vụ uy tín",
+      title: "Maximize Trust",
       desc: "Đang cập nhật ...",
     },
     {
-      title: "Chăm sóc tận tình",
+      title: "Maximize Trust",
       desc: "Đang cập nhật ...",
     },
   ];

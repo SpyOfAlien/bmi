@@ -36,7 +36,7 @@ const AboutCommon = ({ title, desc }) => {
           </div>
         </div>
         <Container>
-          <div className="flex py-12">
+          <div className="flex flex-col md:flex-row py-12">
             <div className="w-full md:w-4/12">
               <SideBar sidebars={aboutSidebars} />
             </div>

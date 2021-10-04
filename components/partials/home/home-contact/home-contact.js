@@ -39,13 +39,13 @@ const HomeContact = () => {
         className="absolute inset-0 w-full flex flex-col justify-center"
       >
         <h5 className="text-center text-white text-h6 lg:text-h5 w-full lg:w-3/5 mx-auto mb-4 px-4 lg:px-0">
-          “Chúng tôi luôn sẵn sàng với mọi thử thách. Hãy cho tôi biết điều điều
-          bạn cần được cung cấp”
+          “Chúng tôi không ngừng nỗ lực để nâng cao giá trị, tạo ra những dịch
+          vụ uy tín và chất lượng cao”
         </h5>
-        <p className="text-center text-white mb-8">
+        {/* <p className="text-center text-white mb-8">
           <span className="mr-4">Đang cập nhật ...</span>
           <span>CEO</span>
-        </p>
+        </p> */}
 
         <div className="flex justify-center">
           <button
