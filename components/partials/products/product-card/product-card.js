@@ -9,12 +9,7 @@ const ProductCard = ({ slug, img, name, summary, cl = "" }) => {
       <Link href={`/products/${slug}`}>
         <a>
           <div className="w-full">
-            <Image
-              src="/assets/images/products/green.png"
-              width={730}
-              height={487}
-              layout="responsive"
-            />
+            <Image src={img} width={730} height={487} layout="responsive" />
           </div>
 
           <div className="absolute inset-0 flex items-end z-10">

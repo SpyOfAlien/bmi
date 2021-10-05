@@ -62,7 +62,7 @@ const HomeClients = () => {
         {clientsOne.map((item, idx) => (
           <div
             key={idx}
-            className="shadow-md p-2 mb-2"
+            className="p-2 mb-2"
             style={{
               width: w >= 1024 ? "16.6%" : w > 700 ? "32%" : "calc(50% - 4px)",
               marginBottom: w >= 1024 ? 0 : "8px",
@@ -77,7 +77,7 @@ const HomeClients = () => {
         {clientsTwo.map((item, idx) => (
           <div
             key={idx}
-            className="shadow-md p-2 mb-2"
+            className="p-2 mb-2"
             style={{
               width: w >= 1024 ? "16.6%" : w > 700 ? "32%" : "calc(50% - 4px)",
               marginBottom: w >= 1024 ? 0 : "8px",

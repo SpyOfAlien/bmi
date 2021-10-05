@@ -53,13 +53,13 @@ const Menu = () => {
             {
               page: "about-capacity-finacy",
               name: "Năng lực Tài chính - Pháp lý",
-              link: "/about/capacity",
+              link: "/about/capacity/finance",
               level: [1, 4, 1],
             },
             {
               page: "about-capacity-resource",
               name: "Năng lực nhân sự",
-              link: "/about/capacity",
+              link: "/about/capacity/resource",
               level: [1, 4, 2],
             },
             {

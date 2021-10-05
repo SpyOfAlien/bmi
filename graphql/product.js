@@ -26,6 +26,16 @@ const SINGLE_PRODUCT_GRAPHQL_FIELDS = `
     width
     height
   },
+  overview,
+  boxCollection(limit: 10) {
+    items {
+      title,
+      description,
+      url,
+      width,
+      height
+    }
+  }
   type,
   desc {
     json
@@ -158,9 +168,6 @@ export async function getProductAndRelated(slug, preview) {
     }`,
     preview
   );
-
-  console.log("entrie", entry);
-  console.log("entriedadw", entries);
 
   return {
     product: extractProduct(entry),

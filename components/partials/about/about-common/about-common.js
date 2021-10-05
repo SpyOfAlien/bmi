@@ -11,6 +11,10 @@ import Image from "next/image";
 import AboutHistory from "../about-history/about-history";
 import AboutVision from "../about-vision/about-vision";
 import AboutPartner from "../about-partner/about-partner";
+import AboutFinance from "../about-finance";
+import AboutResource from "../about-resource";
+import AboutInfrastructure from "../about-infrastructure";
+import AboutMember from "../about-member";
 
 const AboutCommon = ({ title, desc }) => {
   const uiState = useSelector((state) => state.uiReducers);
@@ -40,12 +44,21 @@ const AboutCommon = ({ title, desc }) => {
             <div className="w-full md:w-4/12">
               <SideBar sidebars={aboutSidebars} />
             </div>
-            <div className="w-full md:w-8/12 z-10 bg-white ml-4 p-4 rounded-xs shadow-sidebarContent">
+            <div className="w-full md:w-8/12 z-10 bg-white md:ml-4 p-4 rounded-xs shadow-sidebarContent">
               {isEqual(uiState.sidebarControler.level, [0]) && <AboutBmi />}
               {isEqual(uiState.sidebarControler.level, [1]) && <AboutHistory />}
               {isEqual(uiState.sidebarControler.level, [2]) && <AboutVision />}
-              {isEqual(uiState.sidebarControler.level, [3]) && <CommingSoon />}
+              {isEqual(uiState.sidebarControler.level, [3]) && <AboutMember />}
               {isEqual(uiState.sidebarControler.level, [4]) && <CommingSoon />}
+              {isEqual(uiState.sidebarControler.level, [4, 0]) && (
+                <AboutInfrastructure />
+              )}
+              {isEqual(uiState.sidebarControler.level, [4, 1]) && (
+                <AboutFinance />
+              )}
+              {isEqual(uiState.sidebarControler.level, [4, 2]) && (
+                <AboutResource />
+              )}
               {isEqual(uiState.sidebarControler.level, [4, 3]) && (
                 <AboutPartner />
               )}

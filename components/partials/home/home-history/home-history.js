@@ -54,7 +54,7 @@ const HomeHistory = () => {
             data-aos-duration="500"
             key={idx}
             className={cn(
-              "border-b-4 border-solid border-green-6 w-1/2 lg:w-1/4 pt-4 px-4 md:px-6 w-48 h-48 shadow-lg hover:shadow-2xl cursor-pointer",
+              "border-b-4 border-solid border-green-6 w-48% lg:w-1/4 pt-4 px-4 md:px-6 w-48 h-48 shadow-lg hover:shadow-2xl cursor-pointer",
               idx !== 3 && w > 768 && "mr-4",
               idx !== 3 && w > 1024 && "mr-8",
               (idx === 0 || idx === 2) && w <= 768 && "mr-2",

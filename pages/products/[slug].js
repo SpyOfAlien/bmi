@@ -48,9 +48,10 @@ const ProductDetailPage = ({ product, relatedProduct }) => {
         <Container>
           <div className="bg-white shadow-sidebarContent py-4 px-2 md:px-8 flex flex-col md:flex-row">
             <div className="w-full md:w-3/5 mb-8 md:mb-0">
-              <h5 className="text-h5 text-green-5 font-semibold">
+              <h5 className="text-h5 text-green-5 font-semibold mb-4">
                 {product.name}
               </h5>
+              <p className="pr-6 ">{product.overview}</p>
             </div>
             <div className="w-full md:w-2/5">
               <div className="w-full mb-4">
@@ -71,11 +72,27 @@ const ProductDetailPage = ({ product, relatedProduct }) => {
 
       <section className="relative bottom-20 z-10">
         <Container>
-          <div className="bg-white shadow-sidebarContent py-4 px-2 md:px-8 flex">
-            {documentToReactComponents(
-              product.desc.json,
-              getRichTextRenderOptions(product?.links, {})
-            )}
+          <div className="bg-white shadow-sidebarContent py-4 px-2 md:px-8">
+            <div className="flex flex-wrap mb-12">
+              {product.boxCollection &&
+                product.boxCollection.items.length > 0 &&
+                product.boxCollection.items.map((item, idx) => (
+                  <div key={idx} className="w-32% mr-2">
+                    <Image
+                      src={item.url}
+                      width={item.width}
+                      height={item.height}
+                      layout="responsive"
+                    />
+                  </div>
+                ))}
+            </div>
+            <div className="flex">
+              {documentToReactComponents(
+                product.desc.json,
+                getRichTextRenderOptions(product?.links, {})
+              )}
+            </div>
           </div>
         </Container>
       </section>
@@ -95,6 +112,7 @@ const ProductDetailPage = ({ product, relatedProduct }) => {
                   slug={item.slug}
                   name={item.name}
                   summary={item.summary}
+                  img={item.thumbnail.url}
                 />
               ))}
             </div>

@@ -35,7 +35,7 @@ const NewsCommon = ({ title, desc }) => {
             <div className="w-full md:w-4/12">
               <SideBar sidebars={newsSidebars} />
             </div>
-            <div className="w-full md:w-8/12 z-10 bg-white ml-4 p-4 rounded-xs shadow-sidebarContent">
+            <div className="w-full md:w-8/12 z-10 bg-white md:ml-4 p-4 rounded-xs shadow-sidebarContent">
               <CommingSoon />
             </div>
           </div>
