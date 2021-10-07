@@ -7,7 +7,7 @@ const AboutMember = () => {
           Địa chỉ: Lô CN7, KCN Phúc Sơn, Phường Ninh Phúc, Tp.Ninh Bình, Tỉnh
           Ninh Bình.
         </p>
-        <p className="mb-2">Diện tích: 20,612m2</p>
+        <p className="mb-2">Diện tích: 20,612m2 </p>
         <p className="mb-2">
           Vị trí: Giao thông kết nối thuận tiện đến các mạng lưới giao thông
           (Thủ đô Hà Nội, Cảng Hải Phòng, năm trên trục được tuyển Bắc Nam...)
