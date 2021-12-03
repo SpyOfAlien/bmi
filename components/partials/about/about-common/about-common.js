@@ -20,53 +20,54 @@ const AboutCommon = ({ title, desc }) => {
   const uiState = useSelector((state) => state.uiReducers);
 
   return (
-    <Page>
-      <div className="relative">
-        <div>
-          <Hero
-            img="/assets/images/hero/about/about-bmi.png"
-            title={title}
-            desc={desc}
-          />
-        </div>
-        <div className="absolute bottom-0 left-0 right-0 z-negative">
-          <div className="w-full ">
-            <Image
-              src="/assets/images/common/dot-bg.png"
-              width={1920}
-              height={512}
-              layout="responsive"
-            />
-          </div>
-        </div>
-        <Container>
-          <div className="flex flex-col md:flex-row py-12">
-            <div className="w-full md:w-4/12">
-              <SideBar sidebars={aboutSidebars} />
-            </div>
-            <div className="w-full md:w-8/12 z-10 bg-white md:ml-4 p-4 rounded-xs shadow-sidebarContent">
-              {isEqual(uiState.sidebarControler.level, [0]) && <AboutBmi />}
-              {isEqual(uiState.sidebarControler.level, [1]) && <AboutHistory />}
-              {isEqual(uiState.sidebarControler.level, [2]) && <AboutVision />}
-              {isEqual(uiState.sidebarControler.level, [3]) && <AboutMember />}
-              {isEqual(uiState.sidebarControler.level, [4]) && <CommingSoon />}
-              {isEqual(uiState.sidebarControler.level, [4, 0]) && (
-                <AboutInfrastructure />
-              )}
-              {isEqual(uiState.sidebarControler.level, [4, 1]) && (
-                <AboutFinance />
-              )}
-              {isEqual(uiState.sidebarControler.level, [4, 2]) && (
-                <AboutResource />
-              )}
-              {isEqual(uiState.sidebarControler.level, [4, 3]) && (
-                <AboutPartner />
-              )}
-            </div>
-          </div>
-        </Container>
-      </div>
-    </Page>
+    // <Page>
+    //   <div className="relative">
+    //     <div>
+    //       <Hero
+    //         img="/assets/images/hero/about/about-bmi.png"
+    //         title={title}
+    //         desc={desc}
+    //       />
+    //     </div>
+    //     <div className="absolute bottom-0 left-0 right-0 z-negative">
+    //       <div className="w-full ">
+    //         <Image
+    //           src="/assets/images/common/dot-bg.png"
+    //           width={1920}
+    //           height={512}
+    //           layout="responsive"
+    //         />
+    //       </div>
+    //     </div>
+    //     <Container>
+    //       <div className="flex flex-col md:flex-row py-12">
+    //         <div className="w-full md:w-4/12">
+    //           <SideBar sidebars={aboutSidebars} />
+    //         </div>
+    //         <div className="w-full md:w-8/12 z-10 bg-white md:ml-4 p-4 rounded-xs shadow-sidebarContent">
+    //           {isEqual(uiState.sidebarControler.level, [0]) && <AboutBmi />}
+    //           {isEqual(uiState.sidebarControler.level, [1]) && <AboutHistory />}
+    //           {isEqual(uiState.sidebarControler.level, [2]) && <AboutVision />}
+    //           {isEqual(uiState.sidebarControler.level, [3]) && <AboutMember />}
+    //           {isEqual(uiState.sidebarControler.level, [4]) && <CommingSoon />}
+    //           {isEqual(uiState.sidebarControler.level, [4, 0]) && (
+    //             <AboutInfrastructure />
+    //           )}
+    //           {isEqual(uiState.sidebarControler.level, [4, 1]) && (
+    //             <AboutFinance />
+    //           )}
+    //           {isEqual(uiState.sidebarControler.level, [4, 2]) && (
+    //             <AboutResource />
+    //           )}
+    //           {isEqual(uiState.sidebarControler.level, [4, 3]) && (
+    //             <AboutPartner />
+    //           )}
+    //         </div>
+    //       </div>
+    //     </Container>
+    //   </div>
+    // </Page>
+    <div>BMI Polymer</div>
   );
 };
 

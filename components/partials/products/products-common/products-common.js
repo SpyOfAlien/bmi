@@ -19,55 +19,56 @@ const ProductCommon = ({
   const uiState = useSelector((state) => state.uiReducers);
 
   return (
-    <Page>
-      <div className="relative">
-        <div>
-          <Hero
-            img="/assets/images/hero/products/product-hero.png"
-            title={title}
-            desc={desc}
-          />
-        </div>
+    // <Page>
+    //   <div className="relative">
+    //     <div>
+    //       <Hero
+    //         img="/assets/images/hero/products/product-hero.png"
+    //         title={title}
+    //         desc={desc}
+    //       />
+    //     </div>
 
-        <Container cl="relative">
-          <div className="flex flex-col md:flex-row py-12">
-            <div className="w-full md:w-3/12">
-              <SideBar sidebars={productsSidebars} />
-            </div>
-            <div className="w-full md:w-9/12 z-10 md:ml-4 p-4">
-              <Products
-                products={products}
-                title={titleProduct}
-                desc={descProduct}
-                productBox={productBox}
-                url="2g811Eo7K8U"
-              />
-            </div>
-          </div>
+    //     <Container cl="relative">
+    //       <div className="flex flex-col md:flex-row py-12">
+    //         <div className="w-full md:w-3/12">
+    //           <SideBar sidebars={productsSidebars} />
+    //         </div>
+    //         <div className="w-full md:w-9/12 z-10 md:ml-4 p-4">
+    //           <Products
+    //             products={products}
+    //             title={titleProduct}
+    //             desc={descProduct}
+    //             productBox={productBox}
+    //             url="2g811Eo7K8U"
+    //           />
+    //         </div>
+    //       </div>
 
-          <div className="absolute top-0 left-0 right-0 z-negative">
-            <div className="w-full ">
-              <Image
-                src="/assets/images/common/dot-bg.png"
-                width={1920}
-                height={512}
-                layout="responsive"
-              />
-            </div>
-          </div>
-          <div className="absolute bottom-0 left-0 right-0 z-negative">
-            <div className="w-full ">
-              <Image
-                src="/assets/images/common/dot-bg.png"
-                width={1920}
-                height={512}
-                layout="responsive"
-              />
-            </div>
-          </div>
-        </Container>
-      </div>
-    </Page>
+    //       <div className="absolute top-0 left-0 right-0 z-negative">
+    //         <div className="w-full ">
+    //           <Image
+    //             src="/assets/images/common/dot-bg.png"
+    //             width={1920}
+    //             height={512}
+    //             layout="responsive"
+    //           />
+    //         </div>
+    //       </div>
+    //       <div className="absolute bottom-0 left-0 right-0 z-negative">
+    //         <div className="w-full ">
+    //           <Image
+    //             src="/assets/images/common/dot-bg.png"
+    //             width={1920}
+    //             height={512}
+    //             layout="responsive"
+    //           />
+    //         </div>
+    //       </div>
+    //     </Container>
+    //   </div>
+    // </Page>
+    <div>BMI Polymer</div>
   );
 };
 
