@@ -21,7 +21,7 @@ const HomeContact = () => {
         />
       </div>
 
-      <div className="absolute bottom-0 left-8 md:left-12 lg:left-24 ">
+      {/* <div className="absolute bottom-0 left-8 md:left-12 lg:left-24 ">
         <div className="w-60">
           <Image
             src="/assets/images/common/contact-poly.png"
@@ -30,7 +30,7 @@ const HomeContact = () => {
             layout="responsive"
           />
         </div>
-      </div>
+      </div> */}
 
       <div
         data-aos="fade-up"

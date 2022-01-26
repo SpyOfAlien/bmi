@@ -8,26 +8,25 @@ import HomeHero from "../components/partials/home/home-hero/home-hero";
 
 export default function Home() {
   return (
-    <div>BMI Polymer</div>
-    // <Page>
-    //   <section className="mb-32">
-    //     <HomeHero />
-    //   </section>
-    //   <section className="mb-32">
-    //     <HomeAbout />
-    //   </section>
-    //   <section className="mb-32">
-    //     <HomeProduct />
-    //   </section>
-    //   <section className="mb-32">
-    //     <HomeHistory />
-    //   </section>
-    //   <section className="mb-32">
-    //     <HomeContact />
-    //   </section>
-    //   <section className="mb-32">
-    //     <HomeClients />
-    //   </section>
-    // </Page>
+    <Page>
+      <section className="mb-32">
+        <HomeHero />
+      </section>
+      <section className="mb-32">
+        <HomeAbout />
+      </section>
+      <section className="mb-32">
+        <HomeProduct />
+      </section>
+      <section className="mb-32">
+        <HomeHistory />
+      </section>
+      <section className="mb-32">
+        <HomeContact />
+      </section>
+      <section className="mb-32">
+        <HomeClients />
+      </section>
+    </Page>
   );
 }

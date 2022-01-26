@@ -80,8 +80,8 @@ const Footer = () => {
               <div className="mb-8">
                 <h6 className="font-semibold mb-8">Head Office</h6>
                 <p className="opacity-70">
-                  Lot CN07, Phuc Son Industrial Zone, Ninh Phuc Ward, Ninh Binh
-                  City, Ninh Binh Province, Viet Nam
+                  Lot CN12A, Khanh Thuong IC, Khanh Thuong Commune, Yen Mo
+                  District, Ninh Binh Province, Viet Nam
                 </p>
               </div>
               <div>
@@ -106,11 +106,11 @@ const Footer = () => {
             </p>
             <p className="lg:w-4/12">
               <span className="font-semibold">Tel: </span>
-              <span>+84 229.3593.555</span>
+              <span>(+84) 229 359 3555 - (+84) 24 6688 4084</span>
             </p>
             <p className="lg:w-4/12">
               <span className="font-semibold">Hotline: </span>
-              <span>+84.984.097.525</span>
+              <span>(+84) 984 097 525</span>
             </p>
           </div>
         </div>

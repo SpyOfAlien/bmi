@@ -31,57 +31,56 @@ const ResourcesPage = ({ profiles, products, dir }) => {
   };
 
   return (
-    // <Page>
-    //   <Container>
-    //     <div className="my-32">
-    //       <h3 className="text-h3 font-semibold mb-12 text-center">
-    //         BMI Profiles
-    //       </h3>
-    //       <div>
-    //         {profiles.map((file, idx) => (
-    //           <div
-    //             className="flex justify-between mb-6 bg-white shadow hover:shadow-md rounded-xs py-6 px-4"
-    //             key={idx}
-    //             data-aos="fade-up"
-    //             data-aos-delay={idx * 50 + 300}
-    //           >
-    //             <div>{file}</div>
-    //             <div
-    //               onClick={(event) => downloadFile(file, "profile")}
-    //               className="cursor-pointer border border-solid px-2 py-1"
-    //             >
-    //               Xem tài liệu
-    //             </div>
-    //           </div>
-    //         ))}
-    //       </div>
-    //     </div>
-    //     <div className="my-32">
-    //       <h3 className="text-h3 font-semibold mb-12 text-center">
-    //         Sản phẩm BMI
-    //       </h3>
-    //       <div className="flex flex-wrap">
-    //         {products.map((file, idx) => (
-    //           <div
-    //             className="flex flex-col mr-4 mb-2 w-48% md:w-1/3 xl:w-18% justify-between mb-6 bg-white shadow hover:shadow-md rounded-xs py-6 px-4"
-    //             key={idx}
-    //             data-aos="fade-up"
-    //             data-aos-delay={idx * 50 + 300}
-    //           >
-    //             <div className="mb-4 text-center font-semibold">{file}</div>
-    //             <div
-    //               onClick={(event) => downloadFile(file, "products")}
-    //               className="text-center w-4/5 mx-auto cursor-pointer border border-solid px-2 py-1"
-    //             >
-    //               Xem chi tiết
-    //             </div>
-    //           </div>
-    //         ))}
-    //       </div>
-    //     </div>
-    //   </Container>
-    // </Page>
-    <div>BMI Polymer</div>
+    <Page>
+      <Container>
+        <div className="my-32">
+          <h3 className="text-h3 font-semibold mb-12 text-center">
+            BMI Profiles
+          </h3>
+          <div>
+            {profiles.map((file, idx) => (
+              <div
+                className="flex justify-between mb-6 bg-white shadow hover:shadow-md rounded-xs py-6 px-4"
+                key={idx}
+                data-aos="fade-up"
+                data-aos-delay={idx * 50 + 300}
+              >
+                <div>{file}</div>
+                <div
+                  onClick={(event) => downloadFile(file, "profile")}
+                  className="cursor-pointer border border-solid px-2 py-1"
+                >
+                  Xem tài liệu
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="my-32">
+          <h3 className="text-h3 font-semibold mb-12 text-center">
+            Sản phẩm BMI
+          </h3>
+          <div className="flex flex-wrap">
+            {products.map((file, idx) => (
+              <div
+                className="flex flex-col mr-4 mb-2 w-48% md:w-1/3 xl:w-18% justify-between mb-6 bg-white shadow hover:shadow-md rounded-xs py-6 px-4"
+                key={idx}
+                data-aos="fade-up"
+                data-aos-delay={idx * 50 + 300}
+              >
+                <div className="mb-4 text-center font-semibold">{file}</div>
+                <div
+                  onClick={(event) => downloadFile(file, "products")}
+                  className="text-center w-4/5 mx-auto cursor-pointer border border-solid px-2 py-1"
+                >
+                  Xem chi tiết
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Container>
+    </Page>
   );
 };
 

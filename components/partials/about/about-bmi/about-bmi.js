@@ -4,9 +4,8 @@ const AboutBmi = () => {
       <h6 className="text-h6 font-semibold mb-4">Giới thiệu về chúng tôi</h6>
       <div className="p-4 bg-green-8 bg-opacity-20 mb-4">
         <p>
-          Công ty Cổ Phần Bình Minh Polymer (BMI) được thành lập vào năm 2020,
-          có trụ sở tại lô CN7, KCN Phúc Sơn, phường Ninh Phúc, tp. Ninh Bình,
-          tỉnh Ninh Bình.
+          Công ty Cổ Phần BMI Polymer được thành lập năm 2020, trụ sở tại lô
+          CN12A, CCN Khánh Thượng, xã Khánh Thượng, huyện Yên Mô, tỉnh Ninh Bình
         </p>
       </div>
 

@@ -27,9 +27,7 @@ const AboutVision = () => {
                   quan đến ngành nhựa; Phát triển thêm mảng outsorcing cho các
                   công ty FDI.
                 </p>
-                <p>
-                  {" "}
-                  className="mb-2"
+                <p className="mb-2">
                   <b>Diện tích nhà xưởng: </b>Mở rộng diện tích tăng lên
                   25.000-30.000m2.
                 </p>
@@ -38,8 +36,8 @@ const AboutVision = () => {
                   Xuất khẩu đi nước ngoài.
                 </p>
                 <p className="mb-2">
-                  <b>Đến năm 2022: </b>nằm trong top 10 Doanh nghiệp về sản xuất
-                  hạt nhựa compound trên thị trường Việt Nam; đến 2024 – 2025
+                  <b>Đến năm 2025: </b>nằm trong top 10 Doanh nghiệp về sản xuất
+                  hạt nhựa compound trên thị trường Việt Nam; đến 2025 – 2030
                   trở thành Doanh nghiệp nằm top 3 và vươn ra thế giới.
                 </p>
               </div>

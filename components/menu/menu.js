@@ -160,8 +160,8 @@ const Menu = () => {
             <div>
               <h6 className="mt-3 font-semibold mb-2">Địa chỉ</h6>
               <p>
-                Lô CN7, KCN Phúc Sơn, Phường Ninh Phúc, Tp.Ninh Bình, Tỉnh Ninh
-                Bình.
+                Lot CN12A, Khanh Thuong IC, Khanh Thuong Commune, Yen Mo
+                District, Ninh Binh Province, Viet Nam
               </p>
             </div>
           </div>
@@ -172,7 +172,7 @@ const Menu = () => {
             </span>
             <div>
               <h6 className="mt-3 font-semibold mb-2">Email</h6>
-              <p>Sale: info@bmipolymer.com.vn</p>
+              <p>Sale: info@bmipolymer.com.vn - dohuong@bmipolymer.com.vn</p>
             </div>
           </div>
           <div className="flex w-full mb-4 lg:w-1/3 pr-12">
@@ -182,8 +182,8 @@ const Menu = () => {
             <div>
               <h6 className="mt-3 font-semibold mb-2">Phone</h6>
               <p>
-                Tel: +84 229.3593.555 <br />
-                hotline: +84.984.097.525
+                Tel: (+84) 229 359 3555 - (+84) 24 6688 4084 <br />
+                hotline: (+84) 984 097 525
               </p>
             </div>
           </div>
