@@ -18,9 +18,9 @@ export default function Home() {
       <section className="mb-32">
         <HomeProduct />
       </section>
-      <section className="mb-32">
+      {/* <section className="mb-32">
         <HomeHistory />
-      </section>
+      </section> */}
       <section className="mb-32">
         <HomeContact />
       </section>
