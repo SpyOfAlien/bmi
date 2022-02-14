@@ -1,9 +1,9 @@
 const productSidebars = [
   {
     name: "compound",
-    title: "Nhựa nguyên sinh",
+    title: "Nhựa compound",
     level: [0],
-    link: "/products/primary",
+    link: "/products/compound",
   },
   {
     name: "abs",
