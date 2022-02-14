@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const AboutBmi = () => {
   return (
     <div>
@@ -9,7 +11,14 @@ const AboutBmi = () => {
         </p>
       </div>
 
-      <div className="bg-gray w-full h-72 mb-4"></div>
+      <div className="w-full mb-4">
+        <Image
+          src="/assets/images/about/resources/bmi-store.png"
+          width={829}
+          height={488}
+          layout="responsive"
+        />
+      </div>
 
       <p className="mb-4">
         BMI chuyên cung cấp các giải pháp nhựa Compound, đáp ứng theo yêu cầu cụ
