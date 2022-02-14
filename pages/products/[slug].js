@@ -15,6 +15,7 @@ export async function getStaticProps({ params, preview = false }) {
       product: data?.product ?? null,
       relatedProduct: data?.relatedProduct ?? null,
     },
+    revalidate: 10,
   };
 }
 
