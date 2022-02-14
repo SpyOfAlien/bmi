@@ -9,7 +9,7 @@ import s from "./home-product.module.css";
 const HomeProduct = () => {
   const products = [
     {
-      img: "/assets/images/products/green.png",
+      img: "/assets/images/products/1.png",
       imgW: 730,
       imgH: 487,
       override: {
@@ -18,7 +18,7 @@ const HomeProduct = () => {
       },
     },
     {
-      img: "/assets/images/products/black.png",
+      img: "/assets/images/products/2.png",
       imgW: 730,
       imgH: 487,
       override: {
@@ -27,7 +27,7 @@ const HomeProduct = () => {
       },
     },
     {
-      img: "/assets/images/products/yellow.png",
+      img: "/assets/images/products/3.png",
       imgW: 730,
       imgH: 487,
       override: {
@@ -36,7 +36,7 @@ const HomeProduct = () => {
       },
     },
     {
-      img: "/assets/images/products/brown.png",
+      img: "/assets/images/products/1.png",
       imgW: 730,
       imgH: 487,
       override: {
@@ -45,7 +45,7 @@ const HomeProduct = () => {
       },
     },
     {
-      img: "/assets/images/products/green.png",
+      img: "/assets/images/products/2.png",
       imgW: 730,
       imgH: 487,
       override: {

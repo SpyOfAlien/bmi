@@ -9,9 +9,8 @@ const AboutVision = () => {
       </h6>
       <div className="p-4 bg-green-8 bg-opacity-20 mb-12">
         <p>
-          Công ty Cổ Phần Bình Minh Polymer (BMI) được thành lập vào năm 2020,
-          có trụ sở tại lô CN7, KCN Phúc Sơn, phường Ninh Phúc, tp. Ninh Bình,
-          tỉnh Ninh Bình.
+          Công ty Cổ Phần BMI Polymer được thành lập năm 2021, trụ sở tại lô
+          CN12A, CCN Khánh Thượng, xã Khánh Thượng, huyện Yên Mô, tỉnh Ninh Bình
         </p>
       </div>
 
@@ -23,13 +22,13 @@ const AboutVision = () => {
               <div className="w-full lg:w-1/2">
                 <p className="mb-2">
                   <b>Mặt hàng:</b> Chủ trọng phát triển mảng hạt nhựa Compound;
-                  Mở rộng thêm mảng đùn nhựa (Injection); Chế tạo khuôn mẫu liên
-                  quan đến ngành nhựa; Phát triển thêm mảng outsorcing cho các
-                  công ty FDI.
+                  Công ty Cổ Phần BMI Polymer được thành lập năm 2021, trụ sở
+                  tại lô CN12A, CCN Khánh Thượng, xã Khánh Thượng, huyện Yên Mô,
+                  tỉnh Ninh Bình
                 </p>
                 <p className="mb-2">
-                  <b>Diện tích nhà xưởng: </b>Mở rộng diện tích tăng lên
-                  25.000-30.000m2.
+                  <b>Diện tích nhà xưởng: </b>Mở rộng nhà xưởng và chi nhánh
+                  miền Nam.
                 </p>
                 <p className="mb-2">
                   <b>Đối tượng khách hàng: </b>Các công ty trong khối FDI và
@@ -37,8 +36,8 @@ const AboutVision = () => {
                 </p>
                 <p className="mb-2">
                   <b>Đến năm 2025: </b>nằm trong top 10 Doanh nghiệp về sản xuất
-                  hạt nhựa compound trên thị trường Việt Nam; đến 2025 – 2030
-                  trở thành Doanh nghiệp nằm top 3 và vươn ra thế giới.
+                  hạt nhựa compound trên thị trường Việt Nam; đến năm 2030 trở
+                  thành Doanh nghiệp nằm top 3 và vươn ra thế giới.
                 </p>
               </div>
               <div className="w-full lg:w-1/2">

@@ -46,20 +46,19 @@ const AboutCommon = ({ title, desc }) => {
             </div>
             <div className="w-full md:w-8/12 z-10 bg-white md:ml-4 p-4 rounded-xs shadow-sidebarContent">
               {isEqual(uiState.sidebarControler.level, [0]) && <AboutBmi />}
-              {isEqual(uiState.sidebarControler.level, [1]) && <AboutHistory />}
-              {isEqual(uiState.sidebarControler.level, [2]) && <AboutVision />}
-              {isEqual(uiState.sidebarControler.level, [3]) && <AboutMember />}
-              {isEqual(uiState.sidebarControler.level, [4]) && <CommingSoon />}
-              {isEqual(uiState.sidebarControler.level, [4, 0]) && (
+              {isEqual(uiState.sidebarControler.level, [1]) && <AboutVision />}
+              {isEqual(uiState.sidebarControler.level, [2]) && <AboutMember />}
+              {isEqual(uiState.sidebarControler.level, [3]) && <CommingSoon />}
+              {isEqual(uiState.sidebarControler.level, [3, 0]) && (
                 <AboutInfrastructure />
               )}
-              {isEqual(uiState.sidebarControler.level, [4, 1]) && (
+              {isEqual(uiState.sidebarControler.level, [3, 1]) && (
                 <AboutFinance />
               )}
-              {isEqual(uiState.sidebarControler.level, [4, 2]) && (
+              {isEqual(uiState.sidebarControler.level, [3, 2]) && (
                 <AboutResource />
               )}
-              {isEqual(uiState.sidebarControler.level, [4, 3]) && (
+              {isEqual(uiState.sidebarControler.level, [3, 3]) && (
                 <AboutPartner />
               )}
             </div>

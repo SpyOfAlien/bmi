@@ -29,7 +29,7 @@ const AboutInfrastructure = () => {
         </div>
         <div className="w-4/5 mx-auto mb-8">
           <Image
-            src="/assets/images/about/infrastructure/bmi-infrastructure-three.jpg"
+            src="/assets/images/about/infrastructure/bmi-infrastructure-three.png"
             width={1280}
             height={620}
             layout="responsive"
@@ -37,7 +37,7 @@ const AboutInfrastructure = () => {
         </div>
         <div className="w-4/5 mx-auto mb-8">
           <Image
-            src="/assets/images/about/infrastructure/bmi-infrastructure-four.jpg"
+            src="/assets/images/about/infrastructure/bmi-infrastructure-four.png"
             width={1280}
             height={620}
             layout="responsive"
