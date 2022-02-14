@@ -93,8 +93,6 @@ const SupportPage = () => {
       });
     }
 
-    console.log("name", name);
-
     if (!errors.name && !errors.phone && !errors.email && !errors.message) {
       try {
         const res = await axios.post("/api/contact", {

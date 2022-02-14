@@ -144,6 +144,7 @@ export function getRichTextRenderOptions(links, options) {
         }
       },
       [BLOCKS.EMBEDDED_ASSET]: (node, next) => {
+        
         const { title, url, height, width, description } = assetBlockMap.get(
           node.data.target.sys.id
         );
@@ -155,7 +156,7 @@ export function getRichTextRenderOptions(links, options) {
           );
         } else {
           return (
-            <div className={`my-6`}>
+            <div className={`my-6 w-2/5 mx-auto`}>
               <Image
                 src={url}
                 alt={description}

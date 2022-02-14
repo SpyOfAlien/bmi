@@ -44,9 +44,6 @@ const HomeHero = () => {
   ];
 
   const onRedirect = (link, level) => {
-    console.log("link", link);
-    console.log("level", level);
-
     if (level.length > 0) {
       dispatch(updateSidebarController({ level }));
     }

@@ -90,7 +90,7 @@ const ProductDetailPage = ({ product, relatedProduct }) => {
             <div className="flex">
               {documentToReactComponents(
                 product.desc.json,
-                getRichTextRenderOptions(product?.links, {})
+                getRichTextRenderOptions(product?.desc.links, {})
               )}
             </div>
           </div>

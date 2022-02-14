@@ -12,6 +12,20 @@ const PRODUCTS_GRAPHQL_FIELDS = `
     type
     desc {
       json
+      links {
+        assets {
+          block {
+            url
+            width
+            height
+            title
+            description
+            sys {
+              id
+            }
+          }
+        }
+      }
     }
 `;
 
@@ -39,6 +53,20 @@ const SINGLE_PRODUCT_GRAPHQL_FIELDS = `
   type,
   desc {
     json
+    links {
+      assets {
+        block {
+          url
+          width
+          height
+          title
+          description
+          sys {
+            id
+          }
+        }
+      }
+    }
   }
 `;
 
