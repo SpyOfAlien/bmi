@@ -68,8 +68,8 @@ const ContactPage = () => {
               <div>
                 <h6 className="text-h6 font-semibold mb-2">Factory</h6>
                 <p>
-                  Lô CN7, KCN Phúc Sơn, Phường Ninh Phúc, Tp.Ninh Bình, Tỉnh
-                  Ninh Bình.
+                  Lô CN12A, CCN Khánh Thượng, Xã Khánh Thượng, xã Khánh Thượng,
+                  huyện Yên Mô, tỉnh Ninh Bình, Việt Nam
                 </p>
               </div>
             </div>
@@ -80,8 +80,12 @@ const ContactPage = () => {
               <div>
                 <h6 className="text-h6 font-semibold mb-2">Office</h6>
                 <p>
-                  Số 10 Đường 2.3, KĐT Gamuda, Phường Trần Phú, Quận Hoàng Mai,
-                  Thành phố Hà Nội.
+                  <b>Hà Nội:</b> No.10, Road 2.3, Gamuda Gardens Urban Area,
+                  Tran Phu Ward, Hoang Mai District, Ha Noi, Viet Nam Văn phòng
+                </p>
+                <p>
+                  <b>Đồng Nai:</b> Tầng 2, số 10, đường Phan Đăng Lưu, phường
+                  Long Bình, thành phố Biên Hòa, Đồng Nai, Việt Nam.
                 </p>
               </div>
             </div>
@@ -93,7 +97,7 @@ const ContactPage = () => {
                 </span>
                 <div>
                   <h6 className="text-h6 font-semibold mb-2">Contact</h6>
-                  <p>+84.984.097.525</p>
+                  <p>(+84).984.097.525</p>
                 </div>
               </div>
               <div className="w-full lg:w-1/3 flex mb-6 lg:mb-0">

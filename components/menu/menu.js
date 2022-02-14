@@ -172,8 +172,8 @@ const Menu = () => {
             <div>
               <h6 className="mt-3 font-semibold mb-2">Địa chỉ</h6>
               <p>
-                Lot CN12A, Khanh Thuong IC, Khanh Thuong Commune, Yen Mo
-                District, Ninh Binh Province, Viet Nam
+                No.10, Road 2.3, Gamuda Gardens Urban Area, Tran Phu Ward, Hoang
+                Mai District, Ha Noi, Viet Nam
               </p>
             </div>
           </div>
@@ -184,7 +184,7 @@ const Menu = () => {
             </span>
             <div>
               <h6 className="mt-3 font-semibold mb-2">Email</h6>
-              <p>Sale: info@bmipolymer.com.vn - dohuong@bmipolymer.com.vn</p>
+              <p>info@bmipolymer.com.vn</p>
             </div>
           </div>
           <div className="flex w-full mb-4 lg:w-1/3 pr-12">

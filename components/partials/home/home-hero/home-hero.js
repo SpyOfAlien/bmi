@@ -13,7 +13,7 @@ const HomeHero = () => {
   const router = useRouter();
   const sections = [
     {
-      img: "/assets/images/hero/home/factory.png",
+      img: "/assets/images/hero/home/1.png",
       override: {
         title: "Giới thiệu chung",
         content:
@@ -23,7 +23,7 @@ const HomeHero = () => {
       level: [0],
     },
     {
-      img: "/assets/images/hero/home/product.png",
+      img: "/assets/images/hero/home/2.png",
       override: {
         title: "Sản phẩm",
         content:
@@ -33,7 +33,7 @@ const HomeHero = () => {
       level: [0],
     },
     {
-      img: "/assets/images/hero/home/office.png",
+      img: "/assets/images/hero/home/3.png",
       override: {
         title: "Liên hệ",
         content: "Đang cập nhật...",
