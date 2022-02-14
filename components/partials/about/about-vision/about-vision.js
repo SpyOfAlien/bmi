@@ -43,8 +43,12 @@ const AboutVision = () => {
               </div>
               <div className="w-full lg:w-1/2">
                 <div className="w-full px-4">
-                  {/* <Image src="" width={} height={} layout="responsive" /> */}
-                  <div className="bg-gray h-48 w-full"></div>
+                  <Image
+                    src="/assets/images/about/vision/vision-one.png"
+                    width={1280}
+                    height={620}
+                    layout="responsive"
+                  />
                 </div>
               </div>
             </div>
@@ -58,8 +62,12 @@ const AboutVision = () => {
               </p>
               <div className="w-full lg:w-1/2">
                 <div className="w-full">
-                  {/* <Image src="" width={} height={} layout="responsive" /> */}
-                  <div className="bg-gray h-48 w-full"></div>
+                  <Image
+                    src="/assets/images/about/vision/vision-two.png"
+                    width={1280}
+                    height={620}
+                    layout="responsive"
+                  />
                 </div>
               </div>
             </div>
@@ -90,8 +98,12 @@ const AboutVision = () => {
               </div>
               <div className="w-full lg:w-1/2">
                 <div className="w-full px-4">
-                  {/* <Image src="" width={} height={} layout="responsive" /> */}
-                  <div className="bg-gray h-48 w-full"></div>
+                  <Image
+                    src="/assets/images/about/vision/vision-three.png"
+                    width={1280}
+                    height={620}
+                    layout="responsive"
+                  />
                 </div>
               </div>
             </div>

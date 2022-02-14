@@ -6,17 +6,17 @@ const AboutPartner = () => {
   const { w, h } = useWindowSize();
 
   const clientsOne = [
-    "/assets/images/clients/1.png",
-    "/assets/images/clients/2.png",
-    "/assets/images/clients/3.png",
-    "/assets/images/clients/4.png",
-    "/assets/images/clients/5.png",
-    "/assets/images/clients/6.png",
-    "/assets/images/clients/7.png",
-    "/assets/images/clients/8.png",
+    "/assets/images/clients/01.png",
+    "/assets/images/clients/02.png",
+    "/assets/images/clients/03.png",
+    "/assets/images/clients/04.png",
+    "/assets/images/clients/05.png",
+    "/assets/images/clients/06.png",
+    "/assets/images/clients/07.png",
+    "/assets/images/clients/08.png",
   ];
   const clientsTwo = [
-    "/assets/images/clients/9.png",
+    "/assets/images/clients/09.png",
     "/assets/images/clients/10.png",
     "/assets/images/clients/11.png",
     "/assets/images/clients/12.png",
