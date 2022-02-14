@@ -37,15 +37,7 @@ const AboutInfrastructure = () => {
         </div>
         <div className="w-4/5 mx-auto mb-8">
           <Image
-            src="/assets/images/about/infrastructure/bmi-infrastructure-one.jpg"
-            width={1280}
-            height={620}
-            layout="responsive"
-          />
-        </div>
-        <div className="w-4/5 mx-auto mb-8">
-          <Image
-            src="/assets/images/about/infrastructure/bmi-infrastructure-one.jpg"
+            src="/assets/images/about/infrastructure/bmi-infrastructure-four.jpg"
             width={1280}
             height={620}
             layout="responsive"
