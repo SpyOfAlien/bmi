@@ -77,11 +77,11 @@ const Menu = () => {
       link: "/products/primary",
       level: [2],
       childrens: [
-        { name: "Compount", link: "/products/compound", level: [2, 0] },
-        { name: "Nhựa ABS", link: "/products/nhua-abs", level: [2, 1] },
-        { name: "Nhựa PC", link: "/products/hat-nhua-pc", level: [2, 2] },
+        { name: "Hạt nhựa compound", link: "/products/compound", level: [2, 0] },
+        { name: "Hạt nhựa ABS", link: "/products/nhua-abs", level: [2, 1] },
+        { name: "Hạt nhựa PC", link: "/products/hat-nhua-pc", level: [2, 2] },
         {
-          name: "Nhựa PA6/PA66",
+          name: "Hạt nhựa PA6/PA66",
           link: "/products/nhua-pa6-pa66",
           level: [2, 3],
         },

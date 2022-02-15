@@ -1,13 +1,13 @@
 const productSidebars = [
   {
     name: "compound",
-    title: "Nhựa compound",
+    title: "Hạt nhựa compound",
     level: [0],
     link: "/products/compound",
   },
   {
     name: "abs",
-    title: "Nhựa ABS",
+    title: "Hạt nhựa ABS",
     level: [1],
     link: "/products/nhua-abs",
   },
@@ -19,7 +19,7 @@ const productSidebars = [
   },
   {
     name: "pa6/pa66",
-    title: "Nhựa PA6/PA66",
+    title: "Hạt nhựa PA6/PA66",
     level: [3],
     link: "/products/nhua-pa6-pa66",
   },
@@ -31,7 +31,7 @@ const productSidebars = [
   },
   {
     name: "pp",
-    title: "Nhựa PP",
+    title: "Hạt nhựa PP",
     level: [5],
     link: "/products/hat-nhua-pp",
   },
