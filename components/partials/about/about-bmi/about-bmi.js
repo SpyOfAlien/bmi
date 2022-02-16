@@ -6,7 +6,7 @@ const AboutBmi = () => {
       <h6 className="text-h6 font-semibold mb-4">Giới thiệu về chúng tôi</h6>
       <div className="p-4 bg-green-8 bg-opacity-20 mb-4">
         <p>
-          Công ty Cổ Phần BMI Polymer được thành lập năm 2021, trụ sở tại lô
+          Công ty Cổ Phần BMI Polymer được thành lập năm 2020, trụ sở tại lô
           CN12A, CCN Khánh Thượng, xã Khánh Thượng, huyện Yên Mô, tỉnh Ninh Bình
         </p>
       </div>
@@ -28,7 +28,7 @@ const AboutBmi = () => {
 
       <div className="flex flex-col md:flex-row">
         <p className="w-full md:w-1/2">
-          Công ty Cổ Phần BMI Polymer được thành lập năm 2021, trụ sở tại lô
+          Công ty Cổ Phần BMI Polymer được thành lập năm 2020, trụ sở tại lô
           CN12A, CCN Khánh Thượng, xã Khánh Thượng, huyện Yên Mô, tỉnh Ninh Bình
         </p>
         <div className="w-full md:w-1/2 bg-gray"></div>

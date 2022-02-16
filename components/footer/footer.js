@@ -80,8 +80,8 @@ const Footer = () => {
               <div className="mb-8">
                 <h6 className="font-semibold mb-8">Head Office</h6>
                 <p className="opacity-70">
-                  No.10, Road 2.3, Gamuda Gardens Urban Area, Tran Phu Ward,
-                  Hoang Mai District, Ha Noi, Viet Nam
+                  Số 10 Đường 2.3, KĐT Gamuda, Phường Trần Phú, Quận Hoàng Mai,
+                  Thành phố Hà Nội, Việt Nam.
                 </p>
               </div>
               <div>

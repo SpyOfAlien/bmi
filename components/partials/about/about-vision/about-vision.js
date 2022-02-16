@@ -9,7 +9,7 @@ const AboutVision = () => {
       </h6>
       <div className="p-4 bg-green-8 bg-opacity-20 mb-12">
         <p>
-          Công ty Cổ Phần BMI Polymer được thành lập năm 2021, trụ sở tại lô
+          Công ty Cổ Phần BMI Polymer được thành lập năm 2020, trụ sở tại lô
           CN12A, CCN Khánh Thượng, xã Khánh Thượng, huyện Yên Mô, tỉnh Ninh Bình
         </p>
       </div>
@@ -22,7 +22,7 @@ const AboutVision = () => {
               <div className="w-full lg:w-1/2">
                 <p className="mb-2">
                   <b>Mặt hàng:</b> Chủ trọng phát triển mảng hạt nhựa Compound;
-                  Công ty Cổ Phần BMI Polymer được thành lập năm 2021, trụ sở
+                  Công ty Cổ Phần BMI Polymer được thành lập năm 2020, trụ sở
                   tại lô CN12A, CCN Khánh Thượng, xã Khánh Thượng, huyện Yên Mô,
                   tỉnh Ninh Bình
                 </p>
