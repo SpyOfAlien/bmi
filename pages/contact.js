@@ -80,8 +80,8 @@ const ContactPage = () => {
               <div>
                 <h6 className="text-h6 font-semibold mb-2">Office</h6>
                 <p>
-                  <b>Hà Nội:</b> No.10, Road 2.3, Gamuda Gardens Urban Area,
-                  Tran Phu Ward, Hoang Mai District, Ha Noi, Viet Nam Văn phòng
+                  <b>Hà Nội:</b> Số 10 Đường 2.3, KĐT Gamuda, Phường Trần Phú,
+                  Quận Hoàng Mai, Thành phố Hà Nội, Việt Nam.
                 </p>
                 <p>
                   <b>Đồng Nai:</b> Tầng 2, số 10, đường Phan Đăng Lưu, phường

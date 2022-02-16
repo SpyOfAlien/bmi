@@ -77,7 +77,11 @@ const Menu = () => {
       link: "/products/primary",
       level: [2],
       childrens: [
-        { name: "Hạt nhựa compound", link: "/products/compound", level: [2, 0] },
+        {
+          name: "Hạt nhựa compound",
+          link: "/products/compound",
+          level: [2, 0],
+        },
         { name: "Hạt nhựa ABS", link: "/products/nhua-abs", level: [2, 1] },
         { name: "Hạt nhựa PC", link: "/products/hat-nhua-pc", level: [2, 2] },
         {
@@ -172,8 +176,8 @@ const Menu = () => {
             <div>
               <h6 className="mt-3 font-semibold mb-2">Địa chỉ</h6>
               <p>
-                No.10, Road 2.3, Gamuda Gardens Urban Area, Tran Phu Ward, Hoang
-                Mai District, Ha Noi, Viet Nam
+                Số 10 Đường 2.3, KĐT Gamuda, Phường Trần Phú, Quận Hoàng Mai,
+                Thành phố Hà Nội, Việt Nam.
               </p>
             </div>
           </div>
