@@ -13,9 +13,9 @@ const AboutBmi = () => {
 
       <div className="w-full mb-4">
         <Image
-          src="/assets/images/about/resources/bmi-store.png"
-          width={829}
-          height={488}
+          src="/assets/images/about/resources/grandopen.png"
+          width={725}
+          height={484}
           layout="responsive"
         />
       </div>
@@ -31,7 +31,15 @@ const AboutBmi = () => {
           Công ty Cổ Phần BMI Polymer được thành lập năm 2020, trụ sở tại lô
           CN12A, CCN Khánh Thượng, xã Khánh Thượng, huyện Yên Mô, tỉnh Ninh Bình
         </p>
-        <div className="w-full md:w-1/2 bg-gray"></div>
+        <div className="w-full">
+
+        <Image
+          src="/assets/images/about/resources/plasticbox.png"
+          width={725}
+          height={484}
+          layout="responsive"
+        />
+        </div>
       </div>
     </div>
   );
