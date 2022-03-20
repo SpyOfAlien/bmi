@@ -16,7 +16,7 @@ const Hero = ({ img, title, desc }) => {
       <Container cl="py-8 lg:w-4/5">
         <h3 className="font-semibold text-h3 mb-2">{title}</h3>
         <div className="h-1 w-60 bg-green-9 mb-2"></div>
-        <p>{desc}</p>
+        {/* <p>{desc}</p> */}
       </Container>
     </div>
   );

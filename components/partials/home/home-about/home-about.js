@@ -34,30 +34,34 @@ const HomeAbout = () => {
   const aboutSliderContent = [
     {
       title: "Đang cập nhật ...",
-      desc: "Đang cập nhật ...",
+      desc:
+        "BMI chuyên cung cấp các giải pháp nhựa Compound, đáp ứng theo yêu cầu cụ thể của mỗi khách hàng. Ngoài ra chúng tôi cũng nhập khẩu, thương mại các loại nhựa nguyên sinh và tái sinh",
     },
     {
       title: "Đang cập nhật ...",
-      desc: "Đang cập nhật ...",
+      desc:
+        "BMI chuyên cung cấp các giải pháp nhựa Compound, đáp ứng theo yêu cầu cụ thể của mỗi khách hàng. Ngoài ra chúng tôi cũng nhập khẩu, thương mại các loại nhựa nguyên sinh và tái sinh",
     },
     {
       title: "Đang cập nhật ...",
-      desc: "Đang cập nhật ...",
+      desc:
+        "BMI chuyên cung cấp các giải pháp nhựa Compound, đáp ứng theo yêu cầu cụ thể của mỗi khách hàng. Ngoài ra chúng tôi cũng nhập khẩu, thương mại các loại nhựa nguyên sinh và tái sinh",
     },
   ];
 
   const advantages = [
     {
-      title: "Best quality",
-      desc: "Đang cập nhật ...",
+      title: "Khách hàng là trọng tâm",
+      desc:
+        "BMI luôn đặt mình vào vị trí của khách hàng trong mọi suy nghĩ, hành động để mang lại lợi ích và trải nghiệm tốt nhất cho khách hàng",
     },
     {
-      title: "Maximize Trust",
-      desc: "Đang cập nhật ...",
+      title: "Đổi mới và sáng tạo",
+      desc: `Để luôn dẫn đầu, BMI luôn sẵn sàng đón nhận và dẫn dắt sự thay đổi hưởng đến cách làm mới tạo ra kết quả mới, cách làm đột phá tạo ra kết quả vượt trội`,
     },
     {
-      title: "Maximize Trust",
-      desc: "Đang cập nhật ...",
+      title: "Làm việc hiệu quả",
+      desc: `Mọi hành động đều hưởng tới kết quả cụ thể, rõ ràng, BMI làm việc có kế hoạch và kỷ luật thực thi, đảm bảo phân bổ và tối ưu hoá nguồn lực phù hợp tốt nhất`,
     },
   ];
 
@@ -79,9 +83,9 @@ const HomeAbout = () => {
             <div key={idx}>
               {idx === activeSlide && (
                 <div className="mb-6">
-                  <h3 className="text-h3 font-semibold tracking-wide mb-4">
+                  {/* <h3 className="text-h3 font-semibold tracking-wide mb-4">
                     {item.title}
-                  </h3>
+                  </h3> */}
                   <p>{item.desc}</p>
                 </div>
               )}

@@ -39,9 +39,9 @@ const AboutPartner = () => {
   return (
     <div>
       <h6 className="text-h6 font-semibold mb-4">Đối tác của chúng tôi</h6>
-      <div className="p-4 bg-green-8 bg-opacity-20 mb-4">
+      {/* <div className="p-4 bg-green-8 bg-opacity-20 mb-4">
         <p>Đang cập nhật</p>
-      </div>
+      </div> */}
 
       <div className="py-8">
         <Slider {...settings}>
