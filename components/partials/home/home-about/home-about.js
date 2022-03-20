@@ -12,19 +12,19 @@ const HomeAbout = () => {
 
   const aboutSlider = [
     {
-      img: "/assets/images/common/certificate.png",
+      img: "/assets/images/common/certificate.jpg",
       desc: "Chứng chỉ chất lượng",
       imgW: 601,
       imgH: 400,
     },
     {
-      img: "/assets/images/common/certificate.png",
+      img: "/assets/images/common/certificate.jpg",
       desc: "Chứng chỉ chất lượng 1",
       imgW: 601,
       imgH: 400,
     },
     {
-      img: "/assets/images/common/certificate.png",
+      img: "/assets/images/common/certificate.jpg",
       desc: "Chứng chỉ chất lượng 2",
       imgW: 601,
       imgH: 400,

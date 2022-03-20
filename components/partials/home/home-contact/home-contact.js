@@ -11,15 +11,15 @@ const HomeContact = () => {
   };
 
   return (
-    <div className="relative">
-      <div className="w-full">
+    <div className="relative h-72 bg-green-9/75">
+      {/* <div className="w-full">
         <Image
           src="/assets/images/common/contact-bg.png"
           width={w > 1024 ? 1920 : w > 700 ? 1000 : 500}
           height={354}
           layout="responsive"
         />
-      </div>
+      </div> */}
 
       {/* <div className="absolute bottom-0 left-8 md:left-12 lg:left-24 ">
         <div className="w-60">
@@ -38,7 +38,7 @@ const HomeContact = () => {
         data-aos-duration="400"
         className="absolute inset-0 w-full flex flex-col justify-center"
       >
-        <h5 className="text-center text-white text-h6 lg:text-h5 w-full lg:w-3/5 mx-auto mb-4 px-4 lg:px-0">
+        <h5 className="text-center text-white text-h6 lg:text-h5 w-full lg:w-3/5 mx-auto mb-4 px-4 lg:px-0 mb-8">
           “Chúng tôi không ngừng nỗ lực để nâng cao giá trị, tạo ra những dịch
           vụ uy tín và chất lượng cao”
         </h5>
